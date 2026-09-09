@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - Elite Gym</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #5E60CE;      /* Modern Indigo */
+            --secondary-color: #5390D9;    /* Lighter Blue */
+            --accent-color: #48BFE3;       /* Teal Accent */
+            --dark-color: #0B132B;         /* Deep Dark Blue */
+            --light-color: #F8F9FA;
+            --text-dark: #0B132B;
+            --text-light: #5E6472;
+            --card-bg: #ffffff;
+            --section-bg: #F8F9FA;
+            --gradient-1: linear-gradient(135deg, #5E60CE 0%, #5390D9 100%);
+            --gradient-2: linear-gradient(135deg, #48BFE3 0%, #5E60CE 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--section-bg);
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color) !important;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover:after, .navbar-nav .nav-link.active:after {
+            width: 70%;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: var(--gradient-1);
+             background-image: url("images/header2.jpg");
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        
+        /* Main Content Container */
+        .main-content {
+            background-color: #fff;
+            border-radius: 20px;
+            margin: -50px auto 80px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Filters Section */
+        .filter-card {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: none;
+            margin-bottom: 40px;
+            overflow: hidden;
+            background-color: var(--card-bg);
+            position: relative;
+        }
+        
+        .filter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-1);
+        }
+        
+        .filter-card .card-body {
+            padding: 30px;
+        }
+        
+        .filter-card .card-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .filter-card .card-title::before {
+            content: '\f0b0';
+            font-family: 'bootstrap-icons';
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .form-label i {
+            margin-right: 8px;
+            color: var(--primary-color);
+        }
+        
+        .form-select {
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            padding: 12px 15px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            background-color: #f8f9fa;
+        }
+        
+        .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(94, 96, 206, 0.15);
+            background-color: #fff;
+        }
+        
+        .btn-reset {
+            background: var(--gradient-2);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(72, 191, 227, 0.2);
+        }
+        
+        .btn-reset:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(72, 191, 227, 0.3);
+            color: white;
+        }
+        
+        .btn-reset i {
+            margin-right: 8px;
+        }
+        
+        /* Classes Grid */
+        .class-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease;
+            height: 100%;
+            border: none;
+            background-color: var(--card-bg);
+            position: relative;
+        }
+        
+        .class-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .class-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .class-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(72, 191, 227, 0.15);
+        }
+        
+        .class-content {
+            padding: 30px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .class-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(72, 191, 227, 0.2);
+        }
+        
+        .class-card:hover .class-icon {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(72, 191, 227, 0.3);
+        }
+        
+        .class-icon i {
+            font-size: 2.2rem;
+            color: #fff;
+        }
+        
+        .class-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--gradient-1);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(94, 96, 206, 0.3);
+        }
+        
+        .class-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            line-height: 1.3;
+            text-align: center;
+        }
+        
+        .class-description {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-align: center;
+            flex-grow: 1;
+        }
+        
+        .class-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .class-info i {
+            margin-right: 5px;
+            color: var(--accent-color);
+        }
+        
+        .class-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .class-price::before {
+            content: '\f4a5';
+            font-family: 'bootstrap-icons';
+            margin-right: 5px;
+        }
+        
+        .btn-class {
+            background: var(--gradient-2);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: auto;
+            box-shadow: 0 5px 15px rgba(72, 191, 227, 0.2);
+        }
+        
+        .btn-class:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(72, 191, 227, 0.3);
+            color: white;
+        }
+        
+        .btn-class i {
+            margin-left: 8px;
+        }
+        
+        /* View More Button */
+        .btn-view-more {
+            background: var(--gradient-1);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            padding: 12px 30px;
+            margin: 30px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.2);
+        }
+        
+        .btn-view-more:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(94, 96, 206, 0.3);
+            color: white;
+        }
+        
+        .btn-view-more i {
+            margin-left: 8px;
+        }
+        
+             /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0B132B 0%, #1C2541 100%);
+            color: white;
+            padding: 70px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-text {
+            margin-bottom: 20px;
+            color: #cccccc;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a:hover {
+            background: var(--gradient-1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.4);
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+        
+        .contact-info i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999999;
+            position: relative;
+            z-index: 1;
+        }
+        /* Loading Spinner */
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            flex-direction: column;
+        }
+        
+        .spinner-border {
+            color: var(--primary-color) !important;
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        .spinner-text {
+            margin-top: 15px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        /* Alert Styles */
+        .alert {
+            border: none;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-weight: 500;
+        }
+        
+        .alert-warning {
+            background-color: rgba(255, 152, 0, 0.1);
+            color: #ff9800;
+            border-left: 4px solid #ff9800;
+        }
+        
+        .alert-info {
+            background-color: rgba(33, 150, 243, 0.1);
+            color: #2196f3;
+            border-left: 4px solid #2196f3;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .page-title {
+                font-size: 2.8rem;
+            }
+            
+            .main-content {
+                margin: -30px 15px 50px;
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 80px 0;
+            }
+            
+            .page-title {
+                font-size: 2.2rem;
+            }
+            
+            .class-card {
+                margin-bottom: 30px;
+            }
+            
+            .main-content {
+                margin: -20px 10px 40px;
+                padding: 20px 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 1.9rem;
+            }
+            
+            .filter-card .card-body {
+                padding: 20px;
+            }
+            
+            .class-content {
+                padding: 20px;
+            }
+            
+            .btn-hero {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> Elite Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessions.html">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i> <span id="nav-username">Account</span>
+                        </a>
+                        <ul class="dropdown-menu" id="navbar-dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">Fitness Classes</h1>
+            <p>Discover our wide range of fitness classes designed to empower and strengthen women of all fitness levels.</p>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="container main-content" id="classes-container">
+        <!-- Filters Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card filter-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Filter Classes</h5>
+                        <form id="filter-form">
+                            <div class="row g-3">
+                                <div class="col-md-3">
+                                    <label for="trainer-filter" class="form-label">
+                                        <i class="bi bi-person-badge"></i> Trainer
+                                    </label>
+                                    <select class="form-select" id="trainer-filter">
+                                        <option value="">All Trainers</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="duration-filter" class="form-label">
+                                        <i class="bi bi-clock-history"></i> Duration
+                                    </label>
+                                    <select class="form-select" id="duration-filter">
+                                        <option value="">Any Duration</option>
+                                        <option value="30">30 minutes</option>
+                                        <option value="60">60 minutes</option>
+                                        <option value="90">90 minutes</option>
+                                        <option value="120">120 minutes</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="sort-filter" class="form-label">
+                                        <i class="bi bi-sort-down"></i> Sort By
+                                    </label>
+                                    <select class="form-select" id="sort-filter">
+                                        <option value="name">Name</option>
+                                        <option value="duration">Duration</option>
+                                        <option value="price">Price</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3 d-flex align-items-end">
+                                    <button type="button" class="btn btn-reset w-100" id="reset-filters">
+                                        <i class="bi bi-arrow-clockwise"></i> Reset Filters
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Classes Grid -->
+        <div class="row g-4" id="classes-grid">
+            <div class="col-12 text-center">
+                <div class="spinner-container">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-text">Loading classes...</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View More Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-view-more" id="view-more-btn">
+                View More <i class="bi bi-arrow-down-circle"></i>
+            </button>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Elite Gym</h5>
+                    <p class="footer-text">Empowering women through fitness and wellness.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="sessions.html">Online Sessions</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Membership Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i> 123 Fitness Street, Health City, HC 12345</p>
+                        <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                        <p><i class="bi bi-envelope"></i> info@elitegym.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Elite Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- User Authentication Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user is logged in and update navbar
+            if (typeof authService !== 'undefined' && authService.isLoggedIn()) {
+                const user = authService.getCurrentUser();
+                
+                // Update the dropdown toggle text to show the user's name
+                const dropdownToggle = document.getElementById('navbarDropdown');
+                if (dropdownToggle) {
+                    dropdownToggle.innerHTML = `<i class="bi bi-person-circle"></i> <span>${user.name}</span>`;
+                }
+
+                // Update the dropdown menu items
+                const dropdownMenu = document.getElementById('navbar-dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.innerHTML = `
+                        <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                        <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="bookings.html">My Bookings</a></li>
+                        <li><a class="dropdown-item" href="membership.html">My Membership</a></li>
+                        <li><a class="dropdown-item" href="orders.html">Order History</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                    `;
+
+                    // Add event listener to the logout button
+                    const logoutBtn = document.getElementById('logout-btn');
+                    if (logoutBtn) {
+                        logoutBtn.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            authService.logout();
+                        });
+                    }
+                }
+            }
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Global variables
+            let allClasses = [];
+            let filteredClasses = [];
+            const itemsPerLoad = 3; // Number of items to load each time
+            let currentlyDisplayed = 0;
+            
+            // DOM elements
+            const classesContainer = document.getElementById('classes-grid');
+            const viewMoreBtn = document.getElementById('view-more-btn');
+            const trainerFilter = document.getElementById('trainer-filter');
+            const durationFilter = document.getElementById('duration-filter');
+            const sortFilter = document.getElementById('sort-filter');
+            const resetFiltersBtn = document.getElementById('reset-filters');
+            
+            // Format duration function
+            function formatDuration(minutes) {
+                const num = parseFloat(minutes);
+                if (num % 1 === 0) {
+                    return `${Math.floor(num)} min`;
+                } else {
+                    return `${num} min`;
+                }
+            }
+            
+            // Load classes
+            async function loadClasses() {
+                try {
+                    allClasses = await apiService.getClasses();
+                    filteredClasses = [...allClasses];
+                    
+                    // Populate trainer filter
+                    const trainers = [...new Set(allClasses.map(c => c.trainerName))];
+                    trainerFilter.innerHTML = '<option value="">All Trainers</option>';
+                    trainers.forEach(trainer => {
+                        trainerFilter.innerHTML += `<option value="${trainer}">${trainer}</option>`;
+                    });
+                    
+                    // Reset and render initial classes
+                    currentlyDisplayed = 0;
+                    renderClasses();
+                } catch (error) {
+                    console.error('Error loading classes:', error);
+                    classesContainer.innerHTML = `
+                        <div class="col-12">
+                            <div class="alert alert-warning">Unable to load classes at this time. Please try again later.</div>
+                        </div>
+                    `;
+                }
+            }
+            
+            // Render classes
+            function renderClasses() {
+                // Clear container if this is a fresh load
+                if (currentlyDisplayed === 0) {
+                    classesContainer.innerHTML = '';
+                }
+                
+                // Calculate how many items to display
+                const itemsToDisplay = Math.min(itemsPerLoad, filteredClasses.length - currentlyDisplayed);
+                
+                if (itemsToDisplay <= 0 && currentlyDisplayed === 0) {
+                    classesContainer.innerHTML = `
+                        <div class="col-12">
+                            <div class="alert alert-info">No classes match your selected filters.</div>
+                        </div>
+                    `;
+                    viewMoreBtn.style.display = 'none';
+                    return;
+                }
+                
+                // Render each class
+                for (let i = 0; i < itemsToDisplay; i++) {
+                    const classItem = filteredClasses[currentlyDisplayed + i];
+                    const classCard = `
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card class-card">
+                                <div class="card-body class-content">
+                                    <div class="class-icon">
+                                        <i class="bi bi-activity"></i>
+                                    </div>
+                                    <div class="class-badge">Popular</div>
+                                    <h5 class="card-title class-title">${classItem.name}</h5>
+                                    <p class="card-text class-description">${classItem.description}</p>
+                                    <div class="class-info">
+                                        <span><i class="bi bi-clock"></i> ${formatDuration(classItem.duration)}</span>
+                                        <span><i class="bi bi-person"></i> ${classItem.trainerName}</span>
+                                    </div>
+                                    <div class="class-info">
+                                        <span class="class-price">$${classItem.price}</span>
+                                        <span><i class="bi bi-people"></i> ${classItem.maxCapacity} max</span>
+                                    </div>
+                                    <a href="class-details.html?id=${classItem.id}" class="btn btn-class w-100">View Details <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    classesContainer.innerHTML += classCard;
+                }
+                
+                // Update the count of displayed items
+                currentlyDisplayed += itemsToDisplay;
+                
+                // Show or hide the View More button
+                if (currentlyDisplayed >= filteredClasses.length) {
+                    viewMoreBtn.style.display = 'none';
+                } else {
+                    viewMoreBtn.style.display = 'flex';
+                }
+            }
+            
+            // Filter classes
+            function filterClasses() {
+                const trainerValue = trainerFilter.value;
+                const durationValue = durationFilter.value;
+                const sortValue = sortFilter.value;
+                
+                // Apply filters
+                filteredClasses = allClasses.filter(classItem => {
+                    // Trainer filter
+                    if (trainerValue && classItem.trainerName !== trainerValue) {
+                        return false;
+                    }
+                    
+                    // Duration filter
+                    if (durationValue) {
+                        const classDuration = parseFloat(classItem.duration);
+                        const selectedDuration = parseFloat(durationValue);
+                        
+                        if (Math.abs(classDuration - selectedDuration) > 0.01) {
+                            return false;
+                        }
+                    }
+                    
+                    return true;
+                });
+                
+                // Apply sorting
+                filteredClasses.sort((a, b) => {
+                    switch (sortValue) {
+                        case 'name':
+                            return a.name.localeCompare(b.name);
+                        case 'duration':
+                            return parseFloat(a.duration) - parseFloat(b.duration);
+                        case 'price':
+                            return parseFloat(a.price) - parseFloat(b.price);
+                        default:
+                            return 0;
+                    }
+                });
+                
+                // Reset displayed count and render
+                currentlyDisplayed = 0;
+                renderClasses();
+            }
+            
+            // Reset filters
+            function resetFilters() {
+                trainerFilter.value = '';
+                durationFilter.value = '';
+                sortFilter.value = 'name';
+                filterClasses();
+            }
+            
+            // Add event listeners
+            trainerFilter.addEventListener('change', filterClasses);
+            durationFilter.addEventListener('change', filterClasses);
+            sortFilter.addEventListener('change', filterClasses);
+            resetFiltersBtn.addEventListener('click', resetFilters);
+            
+            // View More button event listener
+            viewMoreBtn.addEventListener('click', function() {
+                renderClasses();
+            });
+            
+            // Initial load
+            loadClasses();
+        });
+    </script>
+</body>
+</html>

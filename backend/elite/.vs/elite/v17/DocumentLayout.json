@@ -1,0 +1,1634 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\stripemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\stripemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\utilities\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\utilities\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\stripepaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\stripepaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\stripedirectpaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\stripedirectpaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\onlinesessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\onlinesessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\mockpaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\mockpaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\membershiptypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\membershiptypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\classservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\classservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\paymentmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\paymentmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\onlinesessionschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\onlinesessionschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\onlinesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\onlinesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\classschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\classschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\mockgateways\\tamaramockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\tamaramockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\mockgateways\\tabbymockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\tabbymockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\mockgateways\\mockpaymentgatewaywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\mockpaymentgatewaywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\mockgateways\\mockgatewayfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\mockgatewayfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\mockgateways\\mockgatewaybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\mockgatewaybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\mockgateways\\imockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\imockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\mockgateways\\creditcardmockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\creditcardmockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\middleware\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\middleware\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\middleware\\performancemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\middleware\\performancemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\middleware\\correlationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\middleware\\correlationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\ipromotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\ipromotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\ipaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\ipaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\ionlinesessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\ionlinesessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\imembershiptypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\imembershiptypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\imembershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\imembershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\iclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\trainerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\trainerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\trainerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\trainerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\promotiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\promotiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\onlinesessiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\onlinesessiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\membershiptypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\membershiptypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\membershipdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\membershipdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\classdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\classdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\bookingdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\bookingdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\dtos\\admindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\admindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\data\\gymdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\data\\gymdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\data\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\data\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\trainerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\trainerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\stripewebhookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\stripewebhookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\stripepaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\stripepaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\promotionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\promotionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\onlinesessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\onlinesessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\mockpaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\mockpaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\mockgatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\mockgatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\membershiptypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\membershiptypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\membershipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\membershipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\configurations\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\configurations\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\migrations\\20260429091116_addstripepaymentintegration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\migrations\\20260429091116_addstripepaymentintegration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\migrations\\20251129080613_addpaymentsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\migrations\\20251129080613_addpaymentsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\elite.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\elite.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\naira\\projects renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\elite\\backend\\elite\\elite\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 352,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\appsettings.json",
+              "RelativeDocumentMoniker": "elite\\appsettings.json",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\appsettings.json",
+              "RelativeToolTip": "elite\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-04T09:17:53.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\OrderDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\OrderDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\OrderDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\OrderDtos.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:17:18.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\PaymentService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\PaymentService.cs",
+              "RelativeToolTip": "elite\\Services\\PaymentService.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAAAmwCIBAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:47:25.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\OrderService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\OrderService.cs",
+              "RelativeToolTip": "elite\\Services\\OrderService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:56:06.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Promotion.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Promotion.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Promotion.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Promotion.cs",
+              "RelativeToolTip": "elite\\Models\\Promotion.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwB4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:34:22.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Utilities\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "elite\\Utilities\\PasswordHasher.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Utilities\\PasswordHasher.cs",
+              "RelativeToolTip": "elite\\Utilities\\PasswordHasher.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAywBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:50:53.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StripeModels.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\StripeModels.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\StripeModels.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\StripeModels.cs",
+              "RelativeToolTip": "elite\\Models\\StripeModels.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T07:59:18.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Program.cs",
+              "RelativeDocumentMoniker": "elite\\Program.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Program.cs",
+              "RelativeToolTip": "elite\\Program.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAowNAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:51:22.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TrainerService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\TrainerService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\TrainerService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\TrainerService.cs",
+              "RelativeToolTip": "elite\\Services\\TrainerService.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAmwMoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:56:11.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Utilities\\JwtService.cs",
+              "RelativeDocumentMoniker": "elite\\Utilities\\JwtService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Utilities\\JwtService.cs",
+              "RelativeToolTip": "elite\\Utilities\\JwtService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:50:55.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StripePaymentGateway.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\StripePaymentGateway.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\StripePaymentGateway.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\StripePaymentGateway.cs",
+              "RelativeToolTip": "elite\\Services\\StripePaymentGateway.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAAAiwFEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T08:00:03.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StripeDirectPaymentService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\StripeDirectPaymentService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\StripeDirectPaymentService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\StripeDirectPaymentService.cs",
+              "RelativeToolTip": "elite\\Services\\StripeDirectPaymentService.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAmwLQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T08:00:56.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PromotionService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\PromotionService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\PromotionService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\PromotionService.cs",
+              "RelativeToolTip": "elite\\Services\\PromotionService.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAmwOwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:56:10.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\ProductService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\ProductService.cs",
+              "RelativeToolTip": "elite\\Services\\ProductService.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAiwLEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:56:07.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OnlineSessionService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\OnlineSessionService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\OnlineSessionService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\OnlineSessionService.cs",
+              "RelativeToolTip": "elite\\Services\\OnlineSessionService.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAmwNsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:56:04.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MockPaymentGateway.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\MockPaymentGateway.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\MockPaymentGateway.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\MockPaymentGateway.cs",
+              "RelativeToolTip": "elite\\Services\\MockPaymentGateway.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAmwKUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:46:59.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MembershipTypeService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\MembershipTypeService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\MembershipTypeService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\MembershipTypeService.cs",
+              "RelativeToolTip": "elite\\Services\\MembershipTypeService.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwJAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T08:05:56.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MembershipService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\MembershipService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\MembershipService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\MembershipService.cs",
+              "RelativeToolTip": "elite\\Services\\MembershipService.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAqwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:37:59.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\ImageService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\ImageService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\ImageService.cs",
+              "RelativeToolTip": "elite\\Services\\ImageService.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAmwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T08:11:19.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ClassService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\ClassService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\ClassService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\ClassService.cs",
+              "RelativeToolTip": "elite\\Services\\ClassService.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAmwOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:55:53.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\BookingService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\BookingService.cs",
+              "RelativeToolTip": "elite\\Services\\BookingService.cs",
+              "ViewState": "AgIAAKMBAAAAAAAAAAAqwLwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:45:37.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\AuthService.cs",
+              "RelativeToolTip": "elite\\Services\\AuthService.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAmwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:50:05.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\AdminService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Services\\AdminService.cs",
+              "RelativeToolTip": "elite\\Services\\AdminService.cs",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAqwGABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:55:09.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\User.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\User.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\User.cs",
+              "RelativeToolTip": "elite\\Models\\User.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA9wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:29:49.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Trainer.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Trainer.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Trainer.cs",
+              "RelativeToolTip": "elite\\Models\\Trainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:32:22.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StripeSettings.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\StripeSettings.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\StripeSettings.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\StripeSettings.cs",
+              "RelativeToolTip": "elite\\Models\\StripeSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T08:34:53.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Product.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Product.cs",
+              "RelativeToolTip": "elite\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:33:10.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PaymentModels.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\PaymentModels.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\PaymentModels.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\PaymentModels.cs",
+              "RelativeToolTip": "elite\\Models\\PaymentModels.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:45:38.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\OrderItem.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\OrderItem.cs",
+              "RelativeToolTip": "elite\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:33:58.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Order.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Order.cs",
+              "RelativeToolTip": "elite\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:33:33.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OnlineSessionSchedule.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\OnlineSessionSchedule.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\OnlineSessionSchedule.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\OnlineSessionSchedule.cs",
+              "RelativeToolTip": "elite\\Models\\OnlineSessionSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:31:58.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OnlineSession.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\OnlineSession.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\OnlineSession.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\OnlineSession.cs",
+              "RelativeToolTip": "elite\\Models\\OnlineSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:31:36.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MembershipType.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\MembershipType.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\MembershipType.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\MembershipType.cs",
+              "RelativeToolTip": "elite\\Models\\MembershipType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T07:57:04.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Membership.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Membership.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Membership.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Membership.cs",
+              "RelativeToolTip": "elite\\Models\\Membership.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:30:16.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ClassSchedule.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\ClassSchedule.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\ClassSchedule.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\ClassSchedule.cs",
+              "RelativeToolTip": "elite\\Models\\ClassSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:31:07.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Class.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Class.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Class.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Class.cs",
+              "RelativeToolTip": "elite\\Models\\Class.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:30:41.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Booking.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Booking.cs",
+              "RelativeToolTip": "elite\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:32:45.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Admin.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Models\\Admin.cs",
+              "RelativeToolTip": "elite\\Models\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:34:48.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TamaraMockGateway.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\TamaraMockGateway.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\TamaraMockGateway.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\TamaraMockGateway.cs",
+              "RelativeToolTip": "elite\\MockGateways\\TamaraMockGateway.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA2wBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:13:25.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TabbyMockGateway.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\TabbyMockGateway.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\TabbyMockGateway.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\TabbyMockGateway.cs",
+              "RelativeToolTip": "elite\\MockGateways\\TabbyMockGateway.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:13:00.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "MockPaymentGatewayWrapper.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\MockPaymentGatewayWrapper.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\MockPaymentGatewayWrapper.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\MockPaymentGatewayWrapper.cs",
+              "RelativeToolTip": "elite\\MockGateways\\MockPaymentGatewayWrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:23:52.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MockGatewayFactory.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\MockGatewayFactory.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\MockGatewayFactory.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\MockGatewayFactory.cs",
+              "RelativeToolTip": "elite\\MockGateways\\MockGatewayFactory.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:14:04.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MockGatewayBase.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\MockGatewayBase.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\MockGatewayBase.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\MockGatewayBase.cs",
+              "RelativeToolTip": "elite\\MockGateways\\MockGatewayBase.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAmwIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:12:13.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IMockGateway.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\IMockGateway.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\IMockGateway.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\IMockGateway.cs",
+              "RelativeToolTip": "elite\\MockGateways\\IMockGateway.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:11:01.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CreditCardMockGateway.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\CreditCardMockGateway.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\CreditCardMockGateway.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\MockGateways\\CreditCardMockGateway.cs",
+              "RelativeToolTip": "elite\\MockGateways\\CreditCardMockGateway.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:13:44.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RequestLoggingMiddleware.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Middleware\\RequestLoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "elite\\Middleware\\RequestLoggingMiddleware.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Middleware\\RequestLoggingMiddleware.cs",
+              "RelativeToolTip": "elite\\Middleware\\RequestLoggingMiddleware.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:07:56.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "PerformanceMiddleware.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Middleware\\PerformanceMiddleware.cs",
+              "RelativeDocumentMoniker": "elite\\Middleware\\PerformanceMiddleware.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Middleware\\PerformanceMiddleware.cs",
+              "RelativeToolTip": "elite\\Middleware\\PerformanceMiddleware.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:08:18.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "elite\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "elite\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:51:53.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CorrelationMiddleware.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Middleware\\CorrelationMiddleware.cs",
+              "RelativeDocumentMoniker": "elite\\Middleware\\CorrelationMiddleware.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Middleware\\CorrelationMiddleware.cs",
+              "RelativeToolTip": "elite\\Middleware\\CorrelationMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T11:08:40.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ITrainerService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\ITrainerService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\ITrainerService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\ITrainerService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\ITrainerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:22:37.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IPromotionService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IPromotionService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IPromotionService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IPromotionService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IPromotionService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:24:04.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IProductService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:23:00.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IPaymentGateway.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IPaymentGateway.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IPaymentGateway.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IPaymentGateway.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IPaymentGateway.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:46:17.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IOrderService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:23:23.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IOnlineSessionService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IOnlineSessionService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IOnlineSessionService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IOnlineSessionService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IOnlineSessionService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:22:13.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IMembershipTypeService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IMembershipTypeService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IMembershipTypeService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IMembershipTypeService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IMembershipTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T07:58:03.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IMembershipService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IMembershipService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IMembershipService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IMembershipService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IMembershipService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:45:12.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IImageService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IImageService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IImageService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IImageService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T08:10:43.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IClassService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IClassService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IClassService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IClassService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IClassService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:19:26.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IBookingService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IBookingService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IBookingService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IBookingService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:44:40.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:18:34.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IAdminService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IAdminService.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Interfaces\\IAdminService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IAdminService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:24:27.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\UserDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\UserDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\UserDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\UserDtos.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAADwvzkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:43:16.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "TrainerUpdateDto.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\TrainerUpdateDto.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\TrainerUpdateDto.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\TrainerUpdateDto.cs",
+              "RelativeToolTip": "elite\\DTOs\\TrainerUpdateDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:33:36.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "TrainerDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\TrainerDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\TrainerDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\TrainerDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\TrainerDtos.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:16:23.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PromotionDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\PromotionDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\PromotionDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\PromotionDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\PromotionDtos.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAywDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:17:35.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ProductUpdateDto.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\ProductUpdateDto.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\ProductUpdateDto.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\ProductUpdateDto.cs",
+              "RelativeToolTip": "elite\\DTOs\\ProductUpdateDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T07:35:51.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ProductDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\ProductDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\ProductDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\ProductDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\ProductDtos.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA/wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:17:01.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "OnlineSessionDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\OnlineSessionDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\OnlineSessionDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\OnlineSessionDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\OnlineSessionDtos.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:16:07.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "MembershipTypeDto.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\MembershipTypeDto.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\MembershipTypeDto.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\MembershipTypeDto.cs",
+              "RelativeToolTip": "elite\\DTOs\\MembershipTypeDto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvyIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T07:57:34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "MembershipDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\MembershipDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\MembershipDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\MembershipDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\MembershipDtos.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:15:06.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "ClassDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\ClassDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\ClassDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\ClassDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\ClassDtos.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:15:43.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "BookingDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\BookingDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\BookingDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\BookingDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\BookingDtos.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:43:47.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\AuthDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:14:29.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "AdminDtos.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\AdminDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\AdminDtos.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\DTOs\\AdminDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\AdminDtos.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA5wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:25:06.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "GymDbContextFactory.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Data\\GymDbContextFactory.cs",
+              "RelativeDocumentMoniker": "elite\\Data\\GymDbContextFactory.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Data\\GymDbContextFactory.cs",
+              "RelativeToolTip": "elite\\Data\\GymDbContextFactory.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T09:30:04.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "GymDbContext.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Data\\GymDbContext.cs",
+              "RelativeDocumentMoniker": "elite\\Data\\GymDbContext.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Data\\GymDbContext.cs",
+              "RelativeToolTip": "elite\\Data\\GymDbContext.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAqwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:35:23.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "elite\\Data\\DataSeeder.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "elite\\Data\\DataSeeder.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAqwJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:41:45.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "TrainersController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\TrainersController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\TrainersController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\TrainersController.cs",
+              "RelativeToolTip": "elite\\Controllers\\TrainersController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAmwJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:52:37.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\TestController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\TestController.cs",
+              "RelativeToolTip": "elite\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T09:53:10.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "StripeWebhookController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\StripeWebhookController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\StripeWebhookController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\StripeWebhookController.cs",
+              "RelativeToolTip": "elite\\Controllers\\StripeWebhookController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAiwH4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T08:33:26.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "StripePaymentController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\StripePaymentController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\StripePaymentController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\StripePaymentController.cs",
+              "RelativeToolTip": "elite\\Controllers\\StripePaymentController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAmwJQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T08:35:31.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "PromotionsController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\PromotionsController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\PromotionsController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\PromotionsController.cs",
+              "RelativeToolTip": "elite\\Controllers\\PromotionsController.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAmwLsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:52:36.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "elite\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAmwJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:52:23.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\PaymentController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "elite\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAmwLEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:50:05.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "elite\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAA8wNIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:52:03.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "OnlineSessionsController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\OnlineSessionsController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\OnlineSessionsController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\OnlineSessionsController.cs",
+              "RelativeToolTip": "elite\\Controllers\\OnlineSessionsController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAmwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:40:58.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "MockPaymentController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\MockPaymentController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\MockPaymentController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\MockPaymentController.cs",
+              "RelativeToolTip": "elite\\Controllers\\MockPaymentController.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAqwMMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T07:50:38.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "MockGatewayController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\MockGatewayController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\MockGatewayController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\MockGatewayController.cs",
+              "RelativeToolTip": "elite\\Controllers\\MockGatewayController.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAAAqwC0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:15:43.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "MembershipTypesController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\MembershipTypesController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\MembershipTypesController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\MembershipTypesController.cs",
+              "RelativeToolTip": "elite\\Controllers\\MembershipTypesController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwIQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T07:59:32.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "MembershipsController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\MembershipsController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\MembershipsController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\MembershipsController.cs",
+              "RelativeToolTip": "elite\\Controllers\\MembershipsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:35:55.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "ClassesController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\ClassesController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\ClassesController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\ClassesController.cs",
+              "RelativeToolTip": "elite\\Controllers\\ClassesController.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAmwKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T07:40:23.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\BookingController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "elite\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAA8wHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:36:24.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "elite\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAmwIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:47:09.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "elite\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAmwIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:37:14.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Configurations\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "elite\\Configurations\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Configurations\\AutoMapperProfile.cs",
+              "RelativeToolTip": "elite\\Configurations\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:52:44.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "20260429091116_AddStripePaymentIntegration.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Migrations\\20260429091116_AddStripePaymentIntegration.cs",
+              "RelativeDocumentMoniker": "elite\\Migrations\\20260429091116_AddStripePaymentIntegration.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Migrations\\20260429091116_AddStripePaymentIntegration.cs",
+              "RelativeToolTip": "elite\\Migrations\\20260429091116_AddStripePaymentIntegration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T09:11:16.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "20251129080613_AddPaymentSystem.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Migrations\\20251129080613_AddPaymentSystem.cs",
+              "RelativeDocumentMoniker": "elite\\Migrations\\20251129080613_AddPaymentSystem.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\Migrations\\20251129080613_AddPaymentSystem.cs",
+              "RelativeToolTip": "elite\\Migrations\\20251129080613_AddPaymentSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T08:06:13.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "elite.csproj",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\elite.csproj",
+              "RelativeDocumentMoniker": "elite\\elite.csproj",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\elite.csproj",
+              "RelativeToolTip": "elite\\elite.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-08T13:31:38.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "elite\\WeatherForecast.cs",
+              "ToolTip": "D:\\Naira\\Projects Renew\\\u0627\u0635\u062D \u0646\u0633\u062E\u0629 \u0645\u0646 \u0645\u0634\u0631\u0648\u0639 \u0627\u0644\u062C\u064A\u0645\\new\\Elite\\backend\\elite\\elite\\WeatherForecast.cs",
+              "RelativeToolTip": "elite\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:52:51.044Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# .NET build files
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Local configuration / secrets
+appsettings.Development.json

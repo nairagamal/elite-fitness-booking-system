@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Membership - Elite Gym</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #5E60CE;      /* Modern Indigo */
+            --secondary-color: #5390D9;    /* Lighter Blue */
+            --accent-color: #48BFE3;       /* Teal Accent */
+            --dark-color: #0B132B;         /* Deep Dark Blue */
+            --light-color: #F8F9FA;
+            --text-dark: #0B132B;
+            --text-light: #5E6472;
+            --card-bg: #ffffff;
+            --section-bg: #F8F9FA;
+            --gradient-1: linear-gradient(135deg, #5E60CE 0%, #5390D9 100%);
+            --gradient-2: linear-gradient(135deg, #48BFE3 0%, #5E60CE 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--section-bg);
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color) !important;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover:after, .navbar-nav .nav-link.active:after {
+            width: 70%;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: var(--gradient-1);
+            background-image: url("images/cta-bg.jpg");
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        
+        /* Main Content Container */
+        .main-content {
+            background-color: #fff;
+            border-radius: 20px;
+            margin: -50px auto 80px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: var(--light-color) !important;
+            min-height: calc(100vh - 76px);
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+            border-radius: 0 20px 20px 0;
+            margin-right: 20px;
+            position: relative;
+        }
+        
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gradient-1);
+            border-radius: 0 20px 20px 0;
+        }
+        
+        .sidebar .nav-link {
+            color: var(--text-dark) !important;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .sidebar .nav-link:hover {
+            background-color: var(--accent-color);
+            color: white !important;
+            transform: translateX(5px);
+        }
+        
+        .sidebar .nav-link.active {
+            background: var(--gradient-1);
+            color: #fff !important;
+            box-shadow: 0 4px 10px rgba(94, 96, 206, 0.3);
+        }
+        
+        .sidebar-heading {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: var(--text-light);
+            padding: 10px 15px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        /* Card Styles */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: none;
+            transition: all 0.4s ease;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(72, 191, 227, 0.15);
+        }
+        
+        .card-header {
+            background: var(--gradient-1);
+            border-bottom: none;
+            font-weight: 600;
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 15px 20px;
+        }
+        
+        /* Button Styles */
+        .btn-primary {
+            background: var(--gradient-2);
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(72, 191, 227, 0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(72, 191, 227, 0.3);
+            color: white;
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background: var(--gradient-1);
+            border-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .btn-light {
+            background-color: white;
+            color: var(--primary-color);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-light:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Form Styles */
+        .form-control, .form-select {
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            padding: 12px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(94, 96, 206, 0.25);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        
+        /* Membership Card Styles */
+        .membership-card {
+            background: var(--gradient-1);
+            color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(94, 96, 206, 0.3);
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .membership-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .membership-card .card-body {
+            padding: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .membership-type {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .membership-status {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .membership-details {
+            margin-top: 20px;
+        }
+        
+        .membership-details .detail-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .membership-details .detail-item:last-child {
+            border-bottom: none;
+        }
+        
+        .progress {
+            height: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+        .progress-bar {
+            background-color: white;
+            border-radius: 10px;
+        }
+        
+        /* Membership Types */
+        .membership-type-card {
+            border: 2px solid var(--accent-color);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+        }
+        
+        .membership-type-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .membership-type-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .membership-type-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(72, 191, 227, 0.2);
+            border-color: var(--primary-color);
+        }
+        
+        .membership-type-card .card-header {
+            background: var(--gradient-1);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 0;
+        }
+        
+        .membership-type-card .card-header h5 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .membership-type-card .price {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 15px 0;
+        }
+        
+        .membership-type-card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .membership-type-card .card-body {
+            padding: 25px;
+        }
+        
+        .membership-type-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+        }
+        
+        .membership-type-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .membership-type-card ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .membership-type-card ul li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+        
+        .membership-type-card .btn {
+            width: 100%;
+            border-radius: 30px;
+            padding: 10px;
+            font-weight: 600;
+        }
+        
+        .membership-type-card.popular {
+            position: relative;
+            border-color: var(--primary-color);
+        }
+        
+        .membership-type-card.popular .popular-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: var(--gradient-1);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(94, 96, 206, 0.3);
+        }
+        
+        /* Swiper Styles */
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding: 20px 0;
+        }
+        
+        .swiper-slide {
+            height: auto;
+        }
+        
+        .swiper-pagination-bullet {
+            background-color: var(--primary-color);
+            opacity: 0.5;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background-color: var(--primary-color);
+            opacity: 1;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--primary-color);
+        }
+        
+        /* Table Styles */
+        .table {
+            color: var(--text-dark);
+        }
+        
+        .table thead th {
+            border-bottom: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Alert Styles */
+        .alert {
+            border: none;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-weight: 500;
+        }
+        
+        .alert-warning {
+            background-color: rgba(255, 152, 0, 0.1);
+            color: #ff9800;
+            border-left: 4px solid #ff9800;
+        }
+        
+        .alert-info {
+            background-color: rgba(33, 150, 243, 0.1);
+            color: #2196f3;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .alert-danger {
+            background-color: rgba(220, 53, 69, 0.1);
+            color: #dc3545;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .alert-success {
+            background-color: rgba(25, 135, 84, 0.1);
+            color: #198754;
+            border-left: 4px solid #198754;
+        }
+        
+        /* Modal Styles */
+        .modal-content {
+            border-radius: 15px;
+            border: none;
+        }
+        
+        .modal-header {
+            background: var(--gradient-1);
+            border-bottom: none;
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+        }
+        
+        .modal-header .btn-close {
+            filter: invert(1);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0B132B 0%, #1C2541 100%);
+            color: white;
+            padding: 70px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-text {
+            margin-bottom: 20px;
+            color: #cccccc;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a:hover {
+            background: var(--gradient-1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.4);
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+        
+        .contact-info i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999999;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Loading Spinner */
+        .spinner-border {
+            color: var(--primary-color) !important;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .sidebar {
+                position: fixed;
+                top: 76px;
+                left: -100%;
+                width: 280px;
+                height: calc(100vh - 76px);
+                z-index: 1000;
+                transition: all 0.3s ease;
+            }
+            
+            .sidebar.show {
+                left: 0;
+            }
+            
+            main {
+                margin-left: 0 !important;
+            }
+            
+            .main-content {
+                margin: -30px 15px 50px;
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 80px 0;
+            }
+            
+            .page-title {
+                font-size: 2.2rem;
+            }
+            
+            .main-content {
+                margin: -20px 10px 40px;
+                padding: 20px 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 1.9rem;
+            }
+            
+            .sidebar .card-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> Elite Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessions.html">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i> <span id="nav-username">Account</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                            <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="bookings.html">My Bookings</a></li>
+                            <li><a class="dropdown-item active" href="membership.html">My Membership</a></li>
+                            <li><a class="dropdown-item" href="orders.html">Order History</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">My Membership</h1>
+            <p>Manage your gym membership and explore upgrade options</p>
+        </div>
+    </div>
+    
+    <!-- Main Content Container -->
+    <div class="container main-content">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse" id="sidebarMenu">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">
+                                <i class="bi bi-speedometer2 me-2"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">
+                                <i class="bi bi-person me-2"></i>
+                                My Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookings.html">
+                                <i class="bi bi-calendar-check me-2"></i>
+                                My Bookings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="membership.html">
+                                <i class="bi bi-card-checklist me-2"></i>
+                                My Membership
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="orders.html">
+                                <i class="bi bi-bag me-2"></i>
+                                Order History
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book-classes.html">
+                                <i class="bi bi-calendar-plus me-2"></i>
+                                Book Classes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book-sessions.html">
+                                <i class="bi bi-camera-video me-2"></i>
+                                Book Sessions
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Quick Links</span>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">
+                                <i class="bi bi-list-task me-2"></i>
+                                Browse Classes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sessions.html">
+                                <i class="bi bi-play-circle me-2"></i>
+                                Browse Sessions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">
+                                <i class="bi bi-shop me-2"></i>
+                                Shop Products
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Main Content Area -->
+            <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">My Membership</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <button type="button" class="btn btn-sm btn-primary" id="refresh-btn">
+                            <i class="bi bi-arrow-clockwise"></i> Refresh
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Alert Container -->
+                <div id="alert-container"></div>
+                
+                <!-- Current Membership Card -->
+                <div class="membership-card" id="current-membership-card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <div class="membership-type" id="membership-type">Loading...</div>
+                                <span class="membership-status" id="membership-status">Loading...</span>
+                            </div>
+                            <div class="text-end">
+                                <div class="h4 mb-0" id="membership-price">$0</div>
+                                <small>Price Paid</small>
+                            </div>
+                        </div>
+                        
+                        <div class="membership-details">
+                            <div class="detail-item">
+                                <span>Start Date</span>
+                                <span id="membership-start">Loading...</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>End Date</span>
+                                <span id="membership-end">Loading...</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Total Hours</span>
+                                <span id="membership-total-hours">0 hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Remaining Hours</span>
+                                <span id="membership-remaining-hours">0 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Hours Used</span>
+                                <span id="membership-hours-used">0 of 0 hours</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 0%" id="membership-progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4 d-flex justify-content-between">
+                            <button class="btn btn-light" id="extend-membership-btn">
+                                <i class="bi bi-plus-circle me-2"></i> Extend Membership
+                            </button>
+                            <button class="btn btn-light" id="upgrade-membership-btn">
+                                <i class="bi bi-arrow-up-circle me-2"></i> Upgrade Membership
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Membership Options -->
+                <div class="card" id="membership-options-card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Membership Options</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="swiper membershipSwiper">
+                            <div class="swiper-wrapper" id="membership-types-container">
+                                <div class="swiper-slide">
+                                    <div class="col-12 text-center">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Membership History -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Membership History</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Price</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="membership-history">
+                                    <tr>
+                                        <td colspan="5" class="text-center">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <!-- Purchase Membership Modal -->
+    <div class="modal fade" id="purchaseMembershipModal" tabindex="-1" aria-labelledby="purchaseMembershipModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="purchaseMembershipModalLabel">Purchase Membership</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="purchase-membership-form">
+                        <input type="hidden" id="membership-type-id">
+                        <div class="mb-3">
+                            <label for="membership-type-name" class="form-label">Membership Type</label>
+                            <input type="text" class="form-control" id="membership-type-name" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="membership-type-price" class="form-label">Price</label>
+                            <input type="text" class="form-control" id="membership-type-price" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="membership-type-description" class="form-label">Description</label>
+                            <textarea class="form-control" id="membership-type-description" rows="3" readonly></textarea>
+                        </div>
+                        <div class="alert alert-info">
+                            <i class="bi bi-info-circle me-2"></i>
+                            By purchasing this membership, you agree to our terms and conditions.
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="confirm-purchase-btn">Confirm Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Elite Gym</h5>
+                    <p class="footer-text">Empowering women through fitness and wellness.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="sessions.html">Online Sessions</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Membership Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i> 123 Fitness Street, Health City, HC 12345</p>
+                        <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                        <p><i class="bi bi-envelope"></i> info@elitegym.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Elite Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+ <script>
+    // API Service
+    const apiService = {
+        // Base URL for API
+        baseUrl: 'https://localhost:7182/api',
+        
+        // Get auth token
+        getAuthToken() {
+            return localStorage.getItem('authToken');
+        },
+        
+        // Generic API request method
+        async request(endpoint, options = {}) {
+            const url = `${this.baseUrl}${endpoint}`;
+            const token = this.getAuthToken();
+            
+            const defaultOptions = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    ...(token && { Authorization: `Bearer ${token}` })
+                }
+            };
+            
+            const config = { ...defaultOptions, ...options };
+            
+            try {
+                const response = await fetch(url, config);
+                
+                if (!response.ok) {
+                    // Handle 404 specifically for membership not found
+                    if (response.status === 404 && endpoint === '/memberships') {
+                        return null; // No membership found
+                    }
+                    const errorData = await response.json().catch(() => ({}));
+                    throw new Error(errorData.message || `Request failed with status ${response.status}`);
+                }
+                
+                return await response.json();
+            } catch (error) {
+                console.error('API request error:', error);
+                throw error;
+            }
+        },
+        
+        // Membership API
+        async getUserMembership() {
+            return this.request('/memberships');
+        },
+        
+        // Membership Types API
+        async getMembershipTypes() {
+            return this.request('/membershiptypes');
+        },
+        
+        // Purchase Membership
+        async purchaseMembership(data) {
+            return this.request('/memberships', {
+                method: 'POST',
+                body: JSON.stringify(data)
+            });
+        },
+        
+        // Extend Membership
+        async extendMembership(membershipId, additionalMonths) {
+            return this.request(`/memberships/${membershipId}/extend`, {
+                method: 'PATCH',
+                body: JSON.stringify({ additionalMonths })
+            });
+        },
+        
+        // Upgrade Membership
+        async upgradeMembership(membershipId, newType) {
+            return this.request(`/memberships/${membershipId}/upgrade`, {
+                method: 'PATCH',
+                body: JSON.stringify({ newType })
+            });
+        }
+    };
+    
+    // Auth Service
+    const authService = {
+        // Check if user is logged in
+        isLoggedIn() {
+            return !!localStorage.getItem('authToken');
+        },
+        
+        // Get current user
+        getCurrentUser() {
+            const userJson = localStorage.getItem('currentUser');
+            return userJson ? JSON.parse(userJson) : null;
+        },
+        
+        // Check if user is admin
+        isAdmin() {
+            const user = this.getCurrentUser();
+            return user && user.role === 'Admin';
+        },
+        
+        // Logout
+        logout() {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('currentUser');
+            window.location.href = 'login.html';
+        }
+    };
+    
+    // UI Helper
+    const uiHelper = {
+        // Format currency
+        formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD'
+            }).format(amount);
+        },
+        
+        // Format date
+        formatDate(dateString) {
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString(undefined, options);
+        },
+        
+        // Show alert
+        showAlert(message, type = 'info') {
+            const alertContainer = document.getElementById('alert-container');
+            const alertId = `alert-${Date.now()}`;
+            
+            const alertHtml = `
+                <div id="${alertId}" class="alert alert-${type} alert-dismissible fade show" role="alert">
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `;
+            
+            alertContainer.insertAdjacentHTML('beforeend', alertHtml);
+            
+            // Auto dismiss after 5 seconds
+            setTimeout(() => {
+                const alertElement = document.getElementById(alertId);
+                if (alertElement) {
+                    const bsAlert = new bootstrap.Alert(alertElement);
+                    bsAlert.close();
+                }
+            }, 5000);
+        }
+    };
+    
+    document.addEventListener('DOMContentLoaded', async function() {
+        // Check if user is logged in
+        if (!authService.isLoggedIn()) {
+            window.location.href = 'login.html?redirect=membership.html';
+            return;
+        }
+        
+        // If user is admin, redirect to admin dashboard
+        if (authService.isAdmin()) {
+            window.location.href = 'admin/dashboard.html';
+            return;
+        }
+        
+        // Get current user
+        const user = authService.getCurrentUser();
+        document.getElementById('nav-username').textContent = user.name;
+        
+        // DOM elements
+        const membershipType = document.getElementById('membership-type');
+        const membershipStatus = document.getElementById('membership-status');
+        const membershipPrice = document.getElementById('membership-price');
+        const membershipStart = document.getElementById('membership-start');
+        const membershipEnd = document.getElementById('membership-end');
+        const membershipTotalHours = document.getElementById('membership-total-hours');
+        const membershipRemainingHours = document.getElementById('membership-remaining-hours');
+        const membershipHoursUsed = document.getElementById('membership-hours-used');
+        const membershipProgress = document.getElementById('membership-progress');
+        const refreshBtn = document.getElementById('refresh-btn');
+        const logoutBtn = document.getElementById('logout-btn');
+        const extendMembershipBtn = document.getElementById('extend-membership-btn');
+        const upgradeMembershipBtn = document.getElementById('upgrade-membership-btn');
+        const membershipTypesContainer = document.getElementById('membership-types-container');
+        const membershipHistory = document.getElementById('membership-history');
+        const purchaseMembershipModal = new bootstrap.Modal(document.getElementById('purchaseMembershipModal'));
+        const confirmPurchaseBtn = document.getElementById('confirm-purchase-btn');
+        const membershipTypeId = document.getElementById('membership-type-id');
+        const membershipTypeName = document.getElementById('membership-type-name');
+        const membershipTypePrice = document.getElementById('membership-type-price');
+        const membershipTypeDescription = document.getElementById('membership-type-description');
+        
+        let currentMembership = null;
+        let swiper = null;
+        
+        // Initialize Swiper
+        function initSwiper() {
+            swiper = new Swiper('.membershipSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+        }
+        
+        // Render no membership state
+        function renderNoMembershipState() {
+            const currentMembershipCard = document.getElementById('current-membership-card');
+            
+            currentMembershipCard.innerHTML = `
+                <div class="card-body">
+                    <div class="text-center py-5">
+                        <i class="bi bi-person-x display-1 text-muted mb-3"></i>
+                        <h3 class="membership-type text-white">No Active Membership</h3>
+                        <p class="text-white mb-4">You don't have an active membership yet.</p>
+                        <div class="alert alert-warning d-inline-block">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            Choose a membership plan to get started with your fitness journey!
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-light btn-lg" onclick="scrollToMembershipOptions()">
+                                <i class="bi bi-arrow-down-circle me-2"></i> View Membership Options
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Disable extend and upgrade buttons
+            extendMembershipBtn.style.display = 'none';
+            upgradeMembershipBtn.style.display = 'none';
+            
+            // Clear membership history
+            membershipHistory.innerHTML = `
+                <tr>
+                    <td colspan="5" class="text-center py-4">
+                        <i class="bi bi-clock-history display-4 text-muted mb-3"></i>
+                        <p class="text-muted">No membership history found</p>
+                    </td>
+                </tr>
+            `;
+        }
+        
+        // Render current membership
+        function renderCurrentMembership(membership) {
+            membershipType.textContent = membership.type;
+            membershipStatus.textContent = membership.status;
+            membershipPrice.textContent = uiHelper.formatCurrency(membership.pricePaid);
+            membershipStart.textContent = uiHelper.formatDate(membership.startDate);
+            membershipEnd.textContent = uiHelper.formatDate(membership.endDate);
+            membershipTotalHours.textContent = `${membership.totalHours} hours`;
+            membershipRemainingHours.textContent = `${membership.remainingHours} hours`;
+            
+            // Calculate progress
+            const hoursUsed = membership.totalHours - membership.remainingHours;
+            const progressPercentage = (hoursUsed / membership.totalHours) * 100;
+            
+            membershipHoursUsed.textContent = `${hoursUsed} of ${membership.totalHours} hours`;
+            membershipProgress.style.width = `${progressPercentage}%`;
+            membershipProgress.setAttribute('aria-valuenow', progressPercentage);
+            
+            // Update status badge
+            membershipStatus.className = 'membership-status';
+            const expiryDate = new Date(membership.endDate);
+            const today = new Date();
+            const diffTime = expiryDate - today;
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            
+            if (diffDays < 0) {
+                membershipStatus.textContent = 'Expired';
+                membershipStatus.classList.add('bg-danger');
+            } else if (diffDays < 30) {
+                membershipStatus.textContent = 'Expiring Soon';
+                membershipStatus.classList.add('bg-warning');
+            } else {
+                membershipStatus.textContent = 'Active';
+                membershipStatus.classList.add('bg-success');
+            }
+            
+            // Show extend and upgrade buttons
+            extendMembershipBtn.style.display = 'block';
+            upgradeMembershipBtn.style.display = 'block';
+            
+            // Update membership history
+            membershipHistory.innerHTML = `
+                <tr>
+                    <td>${membership.type}</td>
+                    <td>${uiHelper.formatDate(membership.startDate)}</td>
+                    <td>${uiHelper.formatDate(membership.endDate)}</td>
+                    <td>${uiHelper.formatCurrency(membership.pricePaid)}</td>
+                    <td><span class="badge bg-${membership.status === 'Active' ? 'success' : 'warning'}">${membership.status}</span></td>
+                </tr>
+            `;
+        }
+        
+        // Load membership data
+        async function loadMembershipData() {
+            try {
+                refreshBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...';
+                refreshBtn.disabled = true;
+                
+                // Load current membership
+                currentMembership = await apiService.getUserMembership();
+                
+                if (!currentMembership) {
+                    // User has no membership
+                    renderNoMembershipState();
+                    uiHelper.showAlert('Welcome! Choose a membership plan to get started.', 'info');
+                } else {
+                    // User has a membership
+                    renderCurrentMembership(currentMembership);
+                }
+                
+                // Load membership types
+                const membershipTypes = await apiService.getMembershipTypes();
+                
+                // Render membership types
+                membershipTypesContainer.innerHTML = '';
+                
+                if (membershipTypes.length === 0) {
+                    membershipTypesContainer.innerHTML = `
+                        <div class="col-12 text-center">
+                            <div class="alert alert-info">
+                                <i class="bi bi-info-circle me-2"></i>
+                                No membership plans available at the moment. Please check back later.
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    membershipTypes.forEach(type => {
+                        const isCurrent = currentMembership && currentMembership.type === type.name;
+                        
+                        const typeCard = document.createElement('div');
+                        typeCard.className = 'swiper-slide';
+                        
+                        typeCard.innerHTML = `
+                            <div class="membership-type-card ${type.name === 'Medium' ? 'popular' : ''}">
+                                ${type.name === 'Medium' ? '<span class="popular-badge">Most Popular</span>' : ''}
+                                <div class="card-header">
+                                    <h5>${type.name}</h5>
+                                    <div class="price">${uiHelper.formatCurrency(type.price)}<span>/${type.durationMonths} months</span></div>
+                                </div>
+                                <div class="card-body">
+                                    <p>${type.description}</p>
+                                    <ul>
+                                        <li><i class="bi bi-check-circle-fill"></i> ${type.totalHours} hours total</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> ${type.durationMonths} months validity</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Access to all classes</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Personal trainer support</li>
+                                    </ul>
+                                    <button class="btn ${isCurrent ? 'btn-outline-secondary' : 'btn-primary'} purchase-membership-btn" 
+                                            data-type-id="${type.id}" 
+                                            data-type-name="${type.name}" 
+                                            data-type-price="${type.price}" 
+                                            data-type-description="${type.description}"
+                                            ${isCurrent ? 'disabled' : ''}>
+                                        ${isCurrent ? 'Current Plan' : 'Choose Plan'}
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+                        
+                        membershipTypesContainer.appendChild(typeCard);
+                    });
+                    
+                    // Initialize or update Swiper
+                    if (swiper) {
+                        swiper.update();
+                    } else {
+                        initSwiper();
+                    }
+                    
+                    // Add event listeners to purchase buttons
+                    document.querySelectorAll('.purchase-membership-btn').forEach(button => {
+                        button.addEventListener('click', function() {
+                            if (!this.disabled) {
+                                const typeId = this.getAttribute('data-type-id');
+                                const typeName = this.getAttribute('data-type-name');
+                                const typePrice = this.getAttribute('data-type-price');
+                                const typeDescription = this.getAttribute('data-type-description');
+                                
+                                membershipTypeId.value = typeId;
+                                membershipTypeName.value = typeName;
+                                membershipTypePrice.value = uiHelper.formatCurrency(typePrice);
+                                membershipTypeDescription.value = typeDescription;
+                                
+                                purchaseMembershipModal.show();
+                            }
+                        });
+                    });
+                }
+                
+            } catch (error) {
+                console.error('Error loading membership data:', error);
+                
+                // More user-friendly error message
+                let errorMessage = 'Error loading membership data. ';
+                
+                if (error.message && error.message.includes('network') || !navigator.onLine) {
+                    errorMessage += 'Please check your internet connection and try again.';
+                } else if (error.status === 401) {
+                    errorMessage += 'Your session has expired. Please log in again.';
+                    setTimeout(() => {
+                        authService.logout();
+                    }, 3000);
+                } else {
+                    errorMessage += 'Please try again later.';
+                }
+                
+                uiHelper.showAlert(errorMessage, 'danger');
+                
+                // Show fallback state
+                renderNoMembershipState();
+            } finally {
+                refreshBtn.innerHTML = '<i class="bi bi-arrow-clockwise"></i> Refresh';
+                refreshBtn.disabled = false;
+            }
+        }
+        
+        // Purchase membership
+        async function purchaseMembership() {
+            try {
+                const typeId = membershipTypeId.value;
+                const typeName = membershipTypeName.value;
+                
+                confirmPurchaseBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
+                confirmPurchaseBtn.disabled = true;
+                
+                const purchaseData = {
+                    userId: authService.getCurrentUser().id,
+                    type: typeName
+                };
+                
+                await apiService.purchaseMembership(purchaseData);
+                
+                uiHelper.showAlert('Membership purchased successfully!', 'success');
+                purchaseMembershipModal.hide();
+                loadMembershipData(); // Refresh membership data
+            } catch (error) {
+                console.error('Error purchasing membership:', error);
+                uiHelper.showAlert('Error purchasing membership. Please try again later.', 'danger');
+            } finally {
+                confirmPurchaseBtn.innerHTML = 'Confirm Purchase';
+                confirmPurchaseBtn.disabled = false;
+            }
+        }
+        
+        // Extend membership
+        async function extendMembership() {
+            if (!currentMembership) {
+                uiHelper.showAlert('You need to have an active membership to extend it.', 'warning');
+                return;
+            }
+            
+            try {
+                const additionalMonths = prompt('Enter number of months to extend (1-12):', '1');
+                if (!additionalMonths || isNaN(additionalMonths) || additionalMonths < 1 || additionalMonths > 12) {
+                    uiHelper.showAlert('Invalid number of months. Please enter a value between 1 and 12.', 'warning');
+                    return;
+                }
+                
+                await apiService.extendMembership(currentMembership.id, parseInt(additionalMonths));
+                
+                uiHelper.showAlert(`Membership extended by ${additionalMonths} month(s) successfully!`, 'success');
+                loadMembershipData(); // Refresh membership data
+            } catch (error) {
+                console.error('Error extending membership:', error);
+                uiHelper.showAlert('Error extending membership. Please try again later.', 'danger');
+            }
+        }
+        
+        // Upgrade membership
+        async function upgradeMembership() {
+            if (!currentMembership) {
+                uiHelper.showAlert('You need to have an active membership to upgrade it.', 'warning');
+                return;
+            }
+            
+            try {
+                const newType = prompt('Enter new membership type (Basic/Medium/VIP):', 'VIP');
+                if (!newType || !['Basic', 'Medium', 'VIP'].includes(newType)) {
+                    uiHelper.showAlert('Invalid membership type. Please enter Basic, Medium, or VIP.', 'warning');
+                    return;
+                }
+                
+                await apiService.upgradeMembership(currentMembership.id, newType);
+                
+                uiHelper.showAlert(`Membership upgraded to ${newType} successfully!`, 'success');
+                loadMembershipData(); // Refresh membership data
+            } catch (error) {
+                console.error('Error upgrading membership:', error);
+                uiHelper.showAlert('Error upgrading membership. Please try again later.', 'danger');
+            }
+        }
+        
+        // Scroll to membership options
+        function scrollToMembershipOptions() {
+            document.getElementById('membership-options-card').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+        
+        // Event listeners
+        refreshBtn.addEventListener('click', loadMembershipData);
+        logoutBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            authService.logout();
+        });
+        extendMembershipBtn.addEventListener('click', extendMembership);
+        upgradeMembershipBtn.addEventListener('click', upgradeMembership);
+        confirmPurchaseBtn.addEventListener('click', purchaseMembership);
+        
+        // Make scroll function available globally
+        window.scrollToMembershipOptions = scrollToMembershipOptions;
+        
+        // Initial load
+        loadMembershipData();
+    });
+</script>
+</body>
+</html>

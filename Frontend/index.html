@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Gym - Women's Fitness Center</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #5E60CE;      /* Modern Indigo */
+            --secondary-color: #5390D9;    /* Lighter Blue */
+            --accent-color: #48BFE3;       /* Teal Accent */
+            --dark-color: #0B132B;         /* Deep Dark Blue */
+            --light-color: #F8F9FA;
+            --text-dark: #0B132B;
+            --text-light: #5E6472;
+            --card-bg: #ffffff;
+            --section-bg: #F8F9FA;
+            --gradient-1: linear-gradient(135deg, #5E60CE 0%, #5390D9 100%);
+            --gradient-2: linear-gradient(135deg, #48BFE3 0%, #5E60CE 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--section-bg);
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color) !important;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover:after, .navbar-nav .nav-link.active:after {
+            width: 70%;
+        }
+        
+        /* Hero Section - Redesigned */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(11, 19, 43, 0.85) 0%, rgba(94, 96, 206, 0.85) 100%),
+                        url('images/header1.jpg') center/cover no-repeat;
+            padding: 120px 0 100px;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+        
+        .hero-3d-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70%;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            filter: blur(40px);
+        }
+        
+        .shape1 {
+            width: 300px;
+            height: 300px;
+            background-color: var(--primary-color);
+            top: -100px;
+            left: -100px;
+            animation: float 15s infinite ease-in-out;
+        }
+        
+        .shape2 {
+            width: 250px;
+            height: 250px;
+            background-color: var(--accent-color);
+            bottom: -50px;
+            right: -50px;
+            animation: float 20s infinite ease-in-out reverse;
+        }
+        
+        .shape3 {
+            width: 200px;
+            height: 200px;
+            background-color: var(--secondary-color);
+            top: 50%;
+            left: 60%;
+            animation: float 25s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+        
+        .hero-content {
+            max-width: 600px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            padding: 8px 16px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 30px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-title span {
+            color: var(--accent-color);
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-title span:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            bottom: 5px;
+            left: 0;
+            background: rgba(72, 191, 227, 0.3);
+            z-index: -1;
+            border-radius: 4px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 500px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .btn-hero {
+            padding: 14px 28px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-hero i {
+            transition: transform 0.3s ease;
+        }
+
+        .btn-hero:hover i {
+            transform: translateX(5px);
+        }
+        
+        .btn-primary-custom {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+            color: var(--primary-color);
+        }
+        
+        .btn-outline-custom {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-outline-custom:hover {
+            background-color: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 30px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 5px;
+        }
+        
+        .hero-image-badge {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image-badge i {
+            color: #FFC107;
+        }
+
+        .hero-image-badge span {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 100px 0;
+            background-color: var(--section-bg);
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 4px;
+            background: var(--gradient-1);
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .section-subtitle {
+            color: var(--text-light);
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 40px 25px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            height: 100%;
+            background-color: var(--card-bg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(94, 96, 206, 0.15);
+        }
+        
+        .feature-icon {
+            width: 90px;
+            height: 90px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(94, 96, 206, 0.2);
+        }
+        
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(94, 96, 206, 0.3);
+        }
+        
+        .feature-icon i {
+            font-size: 2.2rem;
+            color: #fff;
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+        
+        .feature-text {
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+        
+        /* Popular Classes Section */
+        .classes-section {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .class-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: none;
+            background-color: var(--card-bg);
+            position: relative;
+        }
+        
+        .class-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .class-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .class-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(72, 191, 227, 0.15);
+        }
+        
+        .class-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .class-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(72, 191, 227, 0.2);
+        }
+        
+        .class-card:hover .class-icon {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(72, 191, 227, 0.3);
+        }
+        
+        .class-icon i {
+            font-size: 2.2rem;
+            color: #fff;
+        }
+        
+        .class-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            text-align: center;
+        }
+        
+        .class-description {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        
+        .class-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .class-info i {
+            margin-right: 5px;
+            color: var(--accent-color);
+        }
+        
+        .btn-class {
+            background: var(--gradient-2);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            align-self: center;
+            box-shadow: 0 5px 15px rgba(72, 191, 227, 0.3);
+        }
+        
+        .btn-class:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(72, 191, 227, 0.4);
+            color: white;
+        }
+        
+        /* Membership Plans Section with Swiper */
+        .membership-section {
+            padding: 100px 0;
+            background-color: var(--section-bg);
+            position: relative;
+        }
+        
+        .swiper {
+            width: 100%;
+            padding: 50px 0;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .pricing-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: none;
+            text-align: center;
+            background-color: var(--card-bg);
+            position: relative;
+            width: 100%;
+            max-width: 320px;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(94, 96, 206, 0.15);
+        }
+        
+        .pricing-header {
+            background: var(--gradient-1);
+            color: white;
+            padding: 30px 20px;
+            position: relative;
+        }
+        
+        .pricing-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        
+        .pricing-price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .pricing-body {
+            padding: 30px 20px;
+        }
+        
+        .pricing-description {
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            color: var(--text-light);
+            text-align: left;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-features li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+        
+        .btn-pricing {
+            background: var(--gradient-1);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.3);
+        }
+        
+        .btn-pricing:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(94, 96, 206, 0.4);
+            color: white;
+        }
+        
+        /* Swiper Navigation */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--primary-color);
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 1.5rem;
+        }
+        
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .swiper-pagination {
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        .swiper-pagination-bullet {
+            background-color: var(--primary-color);
+            opacity: 0.3;
+        }
+        
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+        
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 100px 0;
+            background-color: #fff;
+        }
+        
+        .testimonial-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Georgia, serif;
+            line-height: 1;
+            opacity: 0.3;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--text-light);
+            position: relative;
+            z-index: 1;
+            font-size: 1.05rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.2);
+        }
+        
+        .author-avatar i {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        
+        .author-info h6 {
+            margin-bottom: 0;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .author-info small {
+            color: var(--text-light);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: var(--gradient-1);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("images/cta-bg.jpg");
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .cta-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .btn-cta {
+            background-color: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            color: var(--primary-color);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0B132B 0%, #1C2541 100%);
+            color: white;
+            padding: 70px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-text {
+            margin-bottom: 20px;
+            color: #cccccc;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a:hover {
+            background: var(--gradient-1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.4);
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+        
+        .contact-info i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999999;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Loading Spinner */
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+        
+        .spinner-border {
+            color: var(--primary-color) !important;
+        }
+        
+        /* Alert Styles */
+        .alert {
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .alert-warning {
+            background-color: rgba(255, 152, 0, 0.1);
+            color: #ff9800;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 0 60px;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .features-section, .classes-section, .membership-section, .testimonials-section, .cta-section {
+                padding: 60px 0;
+            }
+            
+            .cta-title {
+                font-size: 2rem;
+            }
+            
+            /* Hide 3D elements on smaller screens */
+            .hero-3d-background {
+                display: none;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .btn-hero {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-stats {
+                justify-content: space-between;
+            }
+
+            .stat-item {
+                text-align: center;
+            }
+            
+            /* Adjust swiper for mobile */
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> Elite Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessions.html">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i> <span id="nav-username">Account</span>
+                        </a>
+                        <ul class="dropdown-menu" id="navbar-dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section - Redesigned -->
+    <section class="hero-section">
+        <!-- Modern Background Elements -->
+        <div class="hero-3d-background">
+            <div class="floating-shape shape1"></div>
+            <div class="floating-shape shape2"></div>
+            <div class="floating-shape shape3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="hero-badge">WOMEN'S FITNESS CENTER</div>
+                        <h1 class="hero-title">Don't Complain, <span>Enjoy The Pain</span></h1>
+                        <p class="hero-subtitle">Transform your body and mind with our premium fitness programs designed exclusively for women.</p>
+                        <div class="hero-buttons">
+                            <a href="register.html" class="btn btn-hero btn-primary-custom">
+                                <span>Join Now</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <a href="classes.html" class="btn btn-hero btn-outline-custom">
+                                <span>View Classes</span>
+                                <i class="bi bi-grid-3x3-gap"></i>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Members</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label">Classes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Trainers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-badge">
+                        <i class="bi bi-star-fill"></i>
+                        <span>4.9/5 Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">We offer more than just a gym - we provide a community of support and empowerment</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h5 class="feature-title">Women-Only Environment</h5>
+                        <p class="feature-text">A safe, comfortable space designed exclusively for women to work out without intimidation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-person-workspace"></i>
+                        </div>
+                        <h5 class="feature-title">Qualified Instructors</h5>
+                        <p class="feature-text">Certified female trainers who understand women's fitness needs and provide personalized guidance.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h5 class="feature-title">Flexible Scheduling</h5>
+                        <p class="feature-text">Book classes and sessions online with our easy-to-use system, available 24/7.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h5 class="feature-title">Free Consultations</h5>
+                        <p class="feature-text">Get personalized fitness assessments and advice from our expert trainers at no extra cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popular Classes Section -->
+    <section class="classes-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Workout Programs</h2>
+                <p class="section-subtitle">Join our most popular fitness programs led by expert trainers</p>
+            </div>
+            
+            <div class="row g-4" id="popular-classes">
+                <!-- Classes will be loaded here -->
+                <div class="col-md-4">
+                    <div class="spinner-container">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="classes.html" class="btn btn-class">View All Programs</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Membership Plans Section with Swiper -->
+    <section class="membership-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Membership Plans</h2>
+                <p class="section-subtitle">Choose the plan that works best for your fitness goals and lifestyle</p>
+            </div>
+            
+            <div class="swiper membershipSwiper">
+                <div class="swiper-wrapper" id="membership-plans">
+                    <!-- Membership plans will be loaded here -->
+                    <div class="swiper-slide">
+                        <div class="spinner-container">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Member Testimonials</h2>
+                <p class="section-subtitle">Hear from women who have transformed their lives with Elite Gym</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Elite Gym has completely transformed my fitness journey. The supportive environment and excellent trainers have helped me achieve goals I never thought possible."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Sarah Johnson</h6>
+                                <small>Member for 2 years</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"As a busy professional, I love the flexibility of booking classes online. The variety of sessions means I never get bored with my workout routine."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Emily Rodriguez</h6>
+                                <small>Member for 1 year</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"The women-only environment makes me feel comfortable and confident. I've made great friends while getting in the best shape of my life!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h6>Jessica Williams</h6>
+                                <small>Member for 6 months</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Start Your Fitness Journey?</h2>
+            <p class="cta-subtitle">Join Elite Gym today and take the first step towards a healthier, stronger you.</p>
+            <a href="register.html" class="btn btn-cta">Join Now</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Elite Gym</h5>
+                    <p class="footer-text">Empowering women through fitness and wellness.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="sessions.html">Online Sessions</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Membership Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i> 123 Fitness Street, Health City, HC 12345</p>
+                        <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                        <p><i class="bi bi-envelope"></i> info@elitegym.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Elite Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- User Authentication Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user is logged in and update navbar
+            if (typeof authService !== 'undefined' && authService.isLoggedIn()) {
+                const user = authService.getCurrentUser();
+                
+                // Update the dropdown toggle text to show the user's name
+                const dropdownToggle = document.getElementById('navbarDropdown');
+                if (dropdownToggle) {
+                    dropdownToggle.innerHTML = `<i class="bi bi-person-circle"></i> <span>${user.name}</span>`;
+                }
+
+                // Update the dropdown menu items
+                const dropdownMenu = document.getElementById('navbar-dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.innerHTML = `
+                        <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                        <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="bookings.html">My Bookings</a></li>
+                        <li><a class="dropdown-item" href="membership.html">My Membership</a></li>
+                        <li><a class="dropdown-item" href="orders.html">Order History</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                    `;
+
+                    // Add event listener to the logout button
+                    const logoutBtn = document.getElementById('logout-btn');
+                    if (logoutBtn) {
+                        logoutBtn.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            authService.logout();
+                        });
+                    }
+                }
+            }
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Load popular classes
+            try {
+                const classesContainer = document.getElementById('popular-classes');
+                classesContainer.innerHTML = '';
+                
+                const classes = await apiService.getClasses();
+                
+                // Display only first 3 classes
+                classes.slice(0, 3).forEach(classItem => {
+                    const classCard = `
+                        <div class="col-md-4">
+                            <div class="card class-card">
+                                <div class="card-body class-content">
+                                    <div class="class-icon">
+                                        <i class="bi bi-activity"></i>
+                                    </div>
+                                    <h5 class="card-title class-title">${classItem.name}</h5>
+                                    <p class="card-text">${classItem.description}</p>
+                                    <div class="class-info">
+                                        <span><i class="bi bi-clock"></i> ${classItem.duration}h</span>
+                                        <span><i class="bi bi-person"></i> ${classItem.trainerName}</span>
+                                    </div>
+                                    <a href="class-details.html?id=${classItem.id}" class="btn btn-class">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    classesContainer.innerHTML += classCard;
+                });
+            } catch (error) {
+                console.error('Error loading classes:', error);
+                const classesContainer = document.getElementById('popular-classes');
+                classesContainer.innerHTML = `
+                    <div class="col-12">
+                        <div class="alert alert-warning">Unable to load classes at this time. Please try again later.</div>
+                    </div>
+                `;
+            }
+            
+            // Load membership plans
+            try {
+                const plansContainer = document.getElementById('membership-plans');
+                plansContainer.innerHTML = '';
+                
+                const membershipTypes = await apiService.getMembershipTypes();
+                
+                membershipTypes.forEach(plan => {
+                    const planCard = `
+                        <div class="swiper-slide">
+                            <div class="card pricing-card">
+                                <div class="pricing-header">
+                                    <h5 class="pricing-title">${plan.name}</h5>
+                                    <div class="pricing-price">$${plan.price}<span>/${plan.durationMonths} month${plan.durationMonths > 1 ? 's' : ''}</span></div>
+                                </div>
+                                <div class="pricing-body">
+                                    <p>${plan.description}</p>
+                                    <ul class="pricing-features">
+                                        <li><i class="bi bi-check-circle-fill"></i> ${plan.totalHours} hours total</li>
+                                       
+                                    </ul>
+                                    <a href="pricing.html" class="btn btn-pricing">Choose Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    plansContainer.innerHTML += planCard;
+                });
+                
+                // Initialize Swiper after loading the membership plans
+                const swiper = new Swiper('.membershipSwiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading membership plans:', error);
+                const plansContainer = document.getElementById('membership-plans');
+                plansContainer.innerHTML = `
+                    <div class="swiper-slide">
+                        <div class="alert alert-warning">Unable to load membership plans at this time. Please try again later.</div>
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

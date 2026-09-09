@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans - Elite Gym</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #5E60CE;      /* Modern Indigo */
+            --secondary-color: #5390D9;    /* Lighter Blue */
+            --accent-color: #48BFE3;       /* Teal Accent */
+            --dark-color: #0B132B;         /* Deep Dark Blue */
+            --light-color: #F8F9FA;
+            --text-dark: #0B132B;
+            --text-light: #5E6472;
+            --card-bg: #ffffff;
+            --section-bg: #F8F9FA;
+            --gradient-1: linear-gradient(135deg, #5E60CE 0%, #5390D9 100%);
+            --gradient-2: linear-gradient(135deg, #48BFE3 0%, #5E60CE 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--section-bg);
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color) !important;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover:after, .navbar-nav .nav-link.active:after {
+            width: 70%;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: var(--gradient-1);
+            background-image: url("images/header2.jpg");
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        
+        /* Main Content Container */
+        .main-content {
+            background-color: #fff;
+            border-radius: 20px;
+            margin: -50px auto 80px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Section Title */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 4px;
+            background-color: var(--primary-color);
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .section-subtitle {
+            color: var(--text-light);
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Membership Cards - Matching Classes Design */
+        .membership-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease;
+            height: 100%;
+            border: none;
+            background-color: var(--card-bg);
+            position: relative;
+        }
+        
+        .membership-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .membership-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .membership-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(72, 191, 227, 0.15);
+        }
+        
+        .membership-content {
+            padding: 30px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .membership-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(72, 191, 227, 0.2);
+        }
+        
+        .membership-card:hover .membership-icon {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(72, 191, 227, 0.3);
+        }
+        
+        .membership-icon i {
+            font-size: 2.2rem;
+            color: #fff;
+        }
+        
+        .membership-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--gradient-1);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(94, 96, 206, 0.3);
+        }
+        
+        .membership-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            line-height: 1.3;
+            text-align: center;
+        }
+        
+        .membership-description {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-align: center;
+            flex-grow: 1;
+        }
+        
+        .membership-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .membership-price::before {
+            content: '\f4a5';
+            font-family: 'bootstrap-icons';
+            margin-right: 5px;
+        }
+        
+        .membership-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .membership-features li {
+            padding: 8px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        .membership-features li i {
+            color: var(--accent-color);
+            margin-right: 8px;
+        }
+        
+        .btn-membership {
+            background: var(--gradient-2);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: auto;
+            box-shadow: 0 5px 15px rgba(72, 191, 227, 0.2);
+        }
+        
+        .btn-membership:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(72, 191, 227, 0.3);
+            color: white;
+        }
+        
+        .btn-membership i {
+            margin-left: 8px;
+        }
+        
+        /* Swiper Styles */
+        .swiper {
+            width: 100%;
+            padding: 40px 0;
+            margin-top: 20px;
+        }
+        
+        .swiper-slide {
+            height: auto;
+            display: flex;
+            align-items: stretch;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--primary-color);
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .swiper-pagination-bullet {
+            background-color: var(--primary-color);
+            opacity: 0.5;
+        }
+        
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+        
+        /* Benefits Section */
+        .benefits-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(94, 96, 206, 0.03) 0%, rgba(83, 144, 217, 0.05) 100%);
+            position: relative;
+        }
+        
+        .benefits-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235E60CE' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        .benefit-item {
+            padding: 30px;
+            border-radius: 15px;
+            background: var(--card-bg);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #e9ecef;
+        }
+        
+        .benefit-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gradient-2);
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(94, 96, 206, 0.1);
+        }
+        
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-item:hover .benefit-icon {
+            background-color: var(--primary-color);
+        }
+        
+        .benefit-icon i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-item:hover .benefit-icon i {
+            color: white;
+        }
+        
+        .benefit-item h5 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            font-size: 1.2rem;
+        }
+        
+        .benefit-item p {
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+        }
+        
+        .accordion {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            background: var(--card-bg);
+        }
+        
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+        
+        .accordion-button {
+            background-color: transparent;
+            color: var(--text-dark);
+            font-weight: 500;
+            box-shadow: none;
+            padding: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: var(--primary-color);
+        }
+        
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235E60CE'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235E60CE'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        
+        .accordion-body {
+            padding: 20px;
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+        
+        /* Modal Styles - UPDATED */
+        .modal-content {
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modal-header {
+            background: var(--gradient-1);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            border-bottom: none;
+        }
+        
+        .modal-title {
+            font-weight: 600;
+        }
+        
+        .btn-close {
+            filter: brightness(0) invert(1);
+        }
+        
+        .form-control, .form-select {
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            padding: 12px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(94, 96, 206, 0.15);
+        }
+        
+        .form-check-input:checked {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary {
+            background: var(--gradient-2);
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background: var(--gradient-1);
+            color: white;
+        }
+        
+        /* Payment Gateway Styles */
+        .payment-gateway-info {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .gateway-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .gateway-mock {
+            background-color: #e3f2fd;
+            color: #1565c0;
+        }
+        
+        .gateway-tabby {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .gateway-tamara {
+            background-color: #fff3e0;
+            color: #ef6c00;
+        }
+        
+        .gateway-credit {
+            background-color: #f3e5f5;
+            color: #7b1fa2;
+        }
+        
+        .test-mode-badge {
+            background-color: #ff9800;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .payment-icon {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        
+        .payment-icon.tabby {
+            background-color: #00a859;
+            color: white;
+        }
+        
+        .payment-icon.tamara {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        
+        .payment-icon.credit {
+            background-color: #6c5ce7;
+            color: white;
+        }
+        
+        .payment-icon.mock {
+            background-color: #636e72;
+            color: white;
+        }
+        
+        .gateway-description {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0B132B 0%, #1C2541 100%);
+            color: white;
+            padding: 70px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-text {
+            margin-bottom: 20px;
+            color: #cccccc;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a:hover {
+            background: var(--gradient-1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.4);
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+        
+        .contact-info i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999999;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Loading Spinner */
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            flex-direction: column;
+        }
+        
+        .spinner-border {
+            color: var(--primary-color) !important;
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        .spinner-text {
+            margin-top: 15px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        /* Alert Styles */
+        .alert {
+            border: none;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-weight: 500;
+        }
+        
+        .alert-warning {
+            background-color: rgba(255, 152, 0, 0.1);
+            color: #ff9800;
+            border-left: 4px solid #ff9800;
+        }
+        
+        .alert-success {
+            background-color: rgba(76, 175, 80, 0.1);
+            color: #4caf50;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .alert-danger {
+            background-color: rgba(244, 67, 54, 0.1);
+            color: #f44336;
+            border-left: 4px solid #f44336;
+        }
+        
+        /* Payment Processing Modal */
+        .payment-processing {
+            text-align: center;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .page-title {
+                font-size: 2.8rem;
+            }
+            
+            .main-content {
+                margin: -30px 15px 50px;
+                padding: 30px 20px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .swiper-button-next,
+            .swiper-button-prev {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 80px 0;
+            }
+            
+            .page-title {
+                font-size: 2.2rem;
+            }
+            
+            .main-content {
+                margin: -20px 10px 40px;
+                padding: 20px 15px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .benefits-section, .faq-section {
+                padding: 60px 0;
+            }
+            
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 1.9rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .membership-price {
+                font-size: 1.2rem;
+            }
+            
+            .btn-hero {
+                display: block;
+                width: 100%;
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> Elite Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessions.html">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pricing.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i> <span id="nav-username">Account</span>
+                        </a>
+                        <ul class="dropdown-menu" id="navbar-dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">Membership Plans</h1>
+            <p>Choose the perfect membership plan that fits your fitness goals and lifestyle.</p>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="container main-content">
+        <!-- Membership Plans -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p class="section-subtitle">Flexible options designed to fit your lifestyle and fitness goals</p>
+            </div>
+            <div class="col-12">
+                <div class="spinner-container" id="loading-spinner">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-text">Loading membership plans...</div>
+                </div>
+                <div class="swiper membership-swiper" id="membership-swiper" style="display: none;">
+                    <div class="swiper-wrapper" id="swiper-wrapper">
+                        <!-- Membership cards will be dynamically added here -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Membership Benefits -->
+        <div class="benefits-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">All Membership Plans Include</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="benefit-item text-center">
+                            <div class="benefit-icon">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+                            <h5>Unlimited Class Access</h5>
+                            <p>Book any class anytime based on your plan hours</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="benefit-item text-center">
+                            <div class="benefit-icon">
+                                <i class="bi bi-person-workspace"></i>
+                            </div>
+                            <h5>Expert Trainers</h5>
+                            <p>Access to our certified female trainers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="benefit-item text-center">
+                            <div class="benefit-icon">
+                                <i class="bi bi-camera-video"></i>
+                            </div>
+                            <h5>Online Sessions</h5>
+                            <p>Join virtual classes from anywhere</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="benefit-item text-center">
+                            <div class="benefit-icon">
+                                <i class="bi bi-shop"></i>
+                            </div>
+                            <h5>Member Discounts</h5>
+                            <p>Special prices on shop products</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                        How do I book a class?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Once you have an active membership, you can book classes through your dashboard. Simply go to the "Book Classes" section, select your preferred class and time, and confirm your booking.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                        Can I cancel my booking?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, you can cancel your booking up to 24 hours before the scheduled class time. Cancellations made less than 24 hours before may not be eligible for a refund of membership hours.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                        What happens if my membership expires?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        When your membership expires, you won't be able to book new classes until you renew. You'll receive reminder emails before your expiration date, and you can easily renew through your dashboard.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                        Can I upgrade or downgrade my plan?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, you can upgrade your plan at any time. Downgrades will take effect at your next renewal cycle. Contact our support team or visit your dashboard to make changes to your plan.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Purchase Membership Modal - UPDATED -->
+    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="purchaseModalLabel">Purchase Membership</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Order Summary -->
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-3">Order Summary</h6>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span id="selected-plan-name-summary" class="text-muted">Plan:</span>
+                                        <span id="selected-plan-price" class="fw-bold"></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-muted">Duration:</span>
+                                        <span id="selected-plan-duration"></span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-muted">Total Hours:</span>
+                                        <span id="selected-plan-hours"></span>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="fw-bold">Total Amount:</span>
+                                        <span id="selected-plan-total" class="h5 fw-bold text-primary"></span>
+                                    </div>
+                                    <small class="text-muted mt-2 d-block">
+                                        <i class="bi bi-info-circle"></i> This is a test payment. No real money will be charged.
+                                    </small>
+                                </div>
+                            </div>
+                            
+                            <!-- Benefits -->
+                            <div class="mt-3">
+                                <h6 class="fw-bold">Membership Benefits:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle text-success me-2"></i> Unlimited class bookings</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i> Online session access</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i> Priority booking</li>
+                                    <li><i class="bi bi-check-circle text-success me-2"></i> Member discounts</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <!-- Payment Form -->
+                            <form id="purchase-form">
+                                <input type="hidden" id="membership-type" name="type">
+                                
+                                <!-- Payment Method -->
+                                <div class="mb-4">
+                                    <label for="payment-method" class="form-label fw-bold">Select Payment Method</label>
+                                    <select class="form-select" id="payment-method" required>
+                                        <option value="">Choose payment method</option>
+                                        <option value="mock">
+                                            <i class="bi bi-credit-card"></i> Mock Payment (Test)
+                                        </option>
+                                        <option value="creditcard">
+                                            <i class="bi bi-credit-card"></i> Credit Card
+                                        </option>
+                                        <option value="credit">
+                                            <i class="bi bi-credit-card"></i> Credit Card (Mock)
+                                        </option>
+                                        <option value="tabby">
+                                            <i class="bi bi-calendar-check"></i> Tabby (Buy Now, Pay Later)
+                                        </option>
+                                        <option value="tamara">
+                                            <i class="bi bi-calendar-week"></i> Tamara (Shop Now, Pay Later)
+                                        </option>
+                                        <option value="mada">
+                                            <i class="bi bi-bank"></i> Mada
+                                        </option>
+                                        <option value="applepay">
+                                            <i class="bi bi-apple"></i> Apple Pay
+                                        </option>
+                                    </select>
+                                    <small class="text-muted">All payments are in test mode</small>
+                                </div>
+                                
+                                <!-- Payment Gateway Instructions -->
+                                <div id="gateway-info" class="payment-gateway-info" style="display: none;">
+                                    <div id="gateway-icon" class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-info-circle me-2"></i>
+                                        <strong id="gateway-title"></strong>
+                                    </div>
+                                    <p id="gateway-description" class="mb-0 small"></p>
+                                </div>
+                                
+                                <!-- Card Fields (Only for credit card) -->
+                                <div id="payment-details-section" style="display: none;">
+                                    <h6 class="fw-bold mb-3">Card Details</h6>
+                                    <div class="mb-3">
+                                        <label for="card-number" class="form-label">Card Number</label>
+                                        <input type="text" class="form-card-field form-control" id="card-number" placeholder="1234 5678 9012 3456" required>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="expiry-date" class="form-label">Expiry Date</label>
+                                            <input type="text" class="form-card-field form-control" id="expiry-date" placeholder="MM/YY" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="cvv" class="form-label">CVV</label>
+                                            <input type="text" class="form-card-field form-control" id="cvv" placeholder="123" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="cardholder-name" class="form-label">Cardholder Name</label>
+                                        <input type="text" class="form-card-field form-control" id="cardholder-name" placeholder="Full Name" required>
+                                    </div>
+                                </div>
+                                
+                                <!-- Terms and Conditions -->
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                    <label class="form-check-label small" for="terms">
+                                        I agree to the <a href="#" class="text-primary">Terms & Conditions</a> and <a href="#" class="text-primary">Privacy Policy</a>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="proceed-to-payment">
+                        Proceed to Payment <i class="bi bi-arrow-right ms-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Payment Processing Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Processing Payment</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="spinner-border text-primary mb-3" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p id="payment-message">Processing your payment...</p>
+                    <div id="checkout-url" style="display: none;">
+                        <p class="mb-2">Redirecting to payment gateway...</p>
+                        <button id="open-payment-window" class="btn btn-primary">
+                            <i class="bi bi-box-arrow-up-right me-1"></i> Open Payment Page
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancel-payment">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Elite Gym</h5>
+                    <p class="footer-text">Empowering women through fitness and wellness.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="sessions.html">Online Sessions</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Membership Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i> 123 Fitness Street, Health City, HC 12345</p>
+                        <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                        <p><i class="bi bi-envelope"></i> info@elitegym.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Elite Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- User Authentication Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user is logged in and update navbar
+            if (typeof authService !== 'undefined' && authService.isLoggedIn()) {
+                const user = authService.getCurrentUser();
+                
+                // Update the dropdown toggle text to show the user's name
+                const dropdownToggle = document.getElementById('navbarDropdown');
+                if (dropdownToggle) {
+                    dropdownToggle.innerHTML = `<i class="bi bi-person-circle"></i> <span>${user.name}</span>`;
+                }
+
+                // Update the dropdown menu items
+                const dropdownMenu = document.getElementById('navbar-dropdown-menu');
+                if (dropdownMenu) {
+                    dropdownMenu.innerHTML = `
+                        <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                        <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="bookings.html">My Bookings</a></li>
+                        <li><a class="dropdown-item" href="membership.html">My Membership</a></li>
+                        <li><a class="dropdown-item" href="orders.html">Order History</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                    `;
+
+                    // Add event listener to the logout button
+                    const logoutBtn = document.getElementById('logout-btn');
+                    if (logoutBtn) {
+                        logoutBtn.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            authService.logout();
+                        });
+                    }
+                }
+            }
+        });
+    </script>
+    
+ <script>
+    document.addEventListener('DOMContentLoaded', async function() {
+        // DOM elements
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const membershipSwiper = document.getElementById('membership-swiper');
+        const swiperWrapper = document.getElementById('swiper-wrapper');
+        const purchaseModal = new bootstrap.Modal(document.getElementById('purchaseModal'));
+        const paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+        const selectedPlanName = document.getElementById('selected-plan-name-summary');
+        const selectedPlanPrice = document.getElementById('selected-plan-price');
+        const selectedPlanDuration = document.getElementById('selected-plan-duration');
+        const selectedPlanHours = document.getElementById('selected-plan-hours');
+        const selectedPlanTotal = document.getElementById('selected-plan-total');
+        const membershipTypeInput = document.getElementById('membership-type');
+        const paymentMethodSelect = document.getElementById('payment-method');
+        const paymentDetailsSection = document.getElementById('payment-details-section');
+        const gatewayInfo = document.getElementById('gateway-info');
+        const gatewayTitle = document.getElementById('gateway-title');
+        const gatewayDescription = document.getElementById('gateway-description');
+        const proceedToPaymentBtn = document.getElementById('proceed-to-payment');
+        const openPaymentWindowBtn = document.getElementById('open-payment-window');
+        const cancelPaymentBtn = document.getElementById('cancel-payment');
+        const checkoutUrlDiv = document.getElementById('checkout-url');
+        const paymentMessage = document.getElementById('payment-message');
+        
+        let currentPlan = null;
+        
+        // Gateway information
+        const gatewayInfoMap = {
+            'mock': {
+                title: 'Mock Payment Gateway',
+                description: 'Test payment system for development. Simulates successful and failed payments.',
+                icon: 'bi-credit-card',
+                requiresCard: true
+            },
+            'credit': {
+                title: 'Credit Card (Mock)',
+                description: 'Test credit card payments. Simulates various payment scenarios.',
+                icon: 'bi-credit-card',
+                requiresCard: true
+            },
+            'tabby': {
+                title: 'Tabby - Buy Now, Pay Later',
+                description: 'Split your payment into installments. Test environment.',
+                icon: 'bi-calendar-check',
+                requiresCard: false
+            },
+            'tamara': {
+                title: 'Tamara - Shop Now, Pay Later',
+                description: 'Pay later or in installments. Test environment.',
+                icon: 'bi-calendar-week',
+                requiresCard: false
+            }
+        };
+        
+        // Event listener for payment method change
+        paymentMethodSelect.addEventListener('change', function() {
+            const method = this.value;
+            const info = gatewayInfoMap[method];
+            
+            if (info) {
+                gatewayTitle.textContent = info.title;
+                gatewayDescription.textContent = info.description;
+                gatewayInfo.style.display = 'block';
+                
+                // Show/hide card fields
+                if (info.requiresCard) {
+                    paymentDetailsSection.style.display = 'block';
+                } else {
+                    paymentDetailsSection.style.display = 'none';
+                }
+            } else {
+                gatewayInfo.style.display = 'none';
+                paymentDetailsSection.style.display = 'none';
+            }
+        });
+        
+        // Load membership plans
+        try {
+            const plans = await apiService.getMembershipTypes();
+            
+            // Clear existing content
+            swiperWrapper.innerHTML = '';
+            
+            plans.forEach((plan, index) => {
+                const isFeatured = index === 1; // Make the middle plan featured
+                const planCard = `
+                    <div class="swiper-slide">
+                        <div class="card membership-card">
+                            ${isFeatured ? '<div class="membership-badge">Most Popular</div>' : ''}
+                            <div class="membership-content">
+                                <div class="membership-icon">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <h5 class="membership-title">${plan.name}</h5>
+                                <p class="membership-description">${plan.description}</p>
+                                <div class="membership-price">$${plan.price}/${plan.durationMonths} month${plan.durationMonths > 1 ? 's' : ''}</div>
+                                <ul class="membership-features">
+                                    <li><i class="bi bi-check-circle-fill"></i> ${plan.totalHours} hours total</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> ${plan.durationMonths} month${plan.durationMonths > 1 ? 's' : ''} duration</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> All classes included</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Online sessions access</li>
+                                </ul>
+                                ${authService.isLoggedIn() ? 
+                                    `<button class="btn btn-membership w-100 purchase-btn" data-plan='${JSON.stringify(plan)}'>Purchase Plan <i class="bi bi-arrow-right"></i></button>` :
+                                    `<a href="register.html" class="btn btn-membership w-100">Sign Up to Purchase <i class="bi bi-arrow-right"></i></a>`
+                                }
+                            </div>
+                        </div>
+                    </div>
+                `;
+                swiperWrapper.innerHTML += planCard;
+            });
+            
+            // Hide loading spinner and show swiper
+            loadingSpinner.style.display = 'none';
+            membershipSwiper.style.display = 'block';
+            
+            // Initialize Swiper
+            const swiper = new Swiper('.membership-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+            });
+            
+            // Add event listeners to purchase buttons
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.purchase-btn')) {
+                    const btn = e.target.closest('.purchase-btn');
+                    currentPlan = JSON.parse(btn.getAttribute('data-plan'));
+                    
+                    // Update modal summary
+                    selectedPlanName.textContent = currentPlan.name;
+                    selectedPlanPrice.textContent = `$${currentPlan.price}`;
+                    selectedPlanDuration.textContent = `${currentPlan.durationMonths} month${currentPlan.durationMonths > 1 ? 's' : ''}`;
+                    selectedPlanHours.textContent = `${currentPlan.totalHours} hours`;
+                    selectedPlanTotal.textContent = `$${currentPlan.price} SAR`;
+                    
+                    // Set hidden input
+                    membershipTypeInput.value = currentPlan.name;
+                    
+                    // Reset form
+                    paymentMethodSelect.value = '';
+                    gatewayInfo.style.display = 'none';
+                    paymentDetailsSection.style.display = 'none';
+                    
+                    // Show modal
+                    purchaseModal.show();
+                }
+            });
+            
+        } catch (error) {
+            console.error('Error loading membership plans:', error);
+            loadingSpinner.innerHTML = `
+                <div class="alert alert-warning">Unable to load membership plans at this time. Please try again later.</div>
+            `;
+        }
+        
+        // Proceed to payment
+        proceedToPaymentBtn.addEventListener('click', async function() {
+            if (!paymentMethodSelect.value) {
+                alert('Please select a payment method');
+                return;
+            }
+            
+            if (!document.getElementById('terms').checked) {
+                alert('Please accept the terms and conditions');
+                return;
+            }
+            
+            // Validate card fields if required
+            const method = paymentMethodSelect.value;
+            const info = gatewayInfoMap[method];
+            
+            if (info && info.requiresCard) {
+                const cardFields = document.querySelectorAll('.form-card-field');
+                let valid = true;
+                
+                cardFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        field.classList.add('is-invalid');
+                        valid = false;
+                    } else {
+                        field.classList.remove('is-invalid');
+                    }
+                });
+                
+                if (!valid) {
+                    alert('Please fill in all card details');
+                    return;
+                }
+            }
+            
+            // Close purchase modal and show payment modal
+            purchaseModal.hide();
+            paymentModal.show();
+            
+            // Process payment
+            try {
+                await processPayment();
+            } catch (error) {
+                console.error('Payment error:', error);
+                paymentMessage.innerHTML = `
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-triangle"></i> ${error.message || 'Payment failed'}
+                    </div>
+                `;
+                proceedToPaymentBtn.disabled = false;
+            }
+        });
+        
+        // Cancel payment
+        cancelPaymentBtn.addEventListener('click', function() {
+            paymentModal.hide();
+        });
+        
+        // Process payment - WORKING VERSION
+        async function processPayment() {
+            paymentMessage.textContent = 'Processing membership purchase...';
+            proceedToPaymentBtn.disabled = true;
+            
+            try {
+                // Purchase membership directly (this works as we saw in logs)
+                const membershipResponse = await apiService.purchaseMembership({
+                    type: membershipTypeInput.value
+                });
+                
+                console.log('Membership purchased successfully:', membershipResponse);
+                
+                // Show success message
+                paymentMessage.innerHTML = `
+                    <div class="alert alert-success">
+                        <i class="bi bi-check-circle"></i> Membership purchased successfully!
+                    </div>
+                    <div class="mt-3">
+                        <p>Your ${currentPlan.name} membership is now active.</p>
+                        <p>You can now book classes and access online sessions.</p>
+                        <button onclick="window.location.href='dashboard.html'" class="btn btn-success">
+                            Go to Dashboard <i class="bi bi-arrow-right ms-1"></i>
+                        </button>
+                    </div>
+                `;
+                
+                // Hide checkout button since we don't have payment processing yet
+                checkoutUrlDiv.style.display = 'none';
+                openPaymentWindowBtn.style.display = 'none';
+                
+            } catch (error) {
+                console.error('Payment processing error:', error);
+                paymentMessage.innerHTML = `
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-triangle"></i> ${error.message || 'Payment processing failed. Please try again.'}
+                    </div>
+                `;
+                throw error;
+            }
+        }
+    });
+</script>
+</body>
+</html>

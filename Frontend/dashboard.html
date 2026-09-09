@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Elite Gym</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #5E60CE;      /* Modern Indigo */
+            --secondary-color: #5390D9;    /* Lighter Blue */
+            --accent-color: #48BFE3;       /* Teal Accent */
+            --dark-color: #0B132B;         /* Deep Dark Blue */
+            --light-color: #F8F9FA;
+            --text-dark: #0B132B;
+            --text-light: #5E6472;
+            --card-bg: #ffffff;
+            --section-bg: #F8F9FA;
+            --gradient-1: linear-gradient(135deg, #5E60CE 0%, #5390D9 100%);
+            --gradient-2: linear-gradient(135deg, #48BFE3 0%, #5E60CE 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--section-bg);
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color) !important;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover:after, .navbar-nav .nav-link.active:after {
+            width: 70%;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: var(--gradient-1);
+            background-image: url("images/cta-bg.jpg");
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("images/cta-bg.jpg");
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        
+        /* Main Content Container */
+        .main-content {
+            background-color: #fff;
+            border-radius: 20px;
+            margin: -50px auto 80px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: var(--light-color) !important;
+            min-height: calc(100vh - 76px);
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+            border-radius: 0 20px 20px 0;
+            margin-right: 20px;
+            position: relative;
+        }
+        
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gradient-1);
+            border-radius: 0 20px 20px 0;
+        }
+        
+        .sidebar .nav-link {
+            color: var(--text-dark) !important;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .sidebar .nav-link:hover {
+            background-color: var(--accent-color);
+            color: white !important;
+            transform: translateX(5px);
+        }
+        
+        .sidebar .nav-link.active {
+            background: var(--gradient-1);
+            color: #fff !important;
+            box-shadow: 0 4px 10px rgba(94, 96, 206, 0.3);
+        }
+        
+        .sidebar-heading {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: var(--text-light);
+            padding: 10px 15px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+
+
+       
+        /* Dashboard Stats */
+        .dashboard-stats {
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: none;
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(72, 191, 227, 0.15);
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(72, 191, 227, 0.2);
+        }
+        
+        .stat-card:hover .stat-icon {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(72, 191, 227, 0.3);
+        }
+        
+        .stat-icon i {
+            font-size: 1.8rem;
+            color: #fff;
+        }
+        
+        /* Card Styles */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: none;
+            transition: all 0.4s ease;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(72, 191, 227, 0.15);
+        }
+        
+        .card-header {
+            background: var(--gradient-1);
+            border-bottom: none;
+            font-weight: 600;
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 15px 20px;
+        }
+        
+        /* Button Styles */
+        .btn-primary {
+            background: var(--gradient-2);
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(72, 191, 227, 0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(72, 191, 227, 0.3);
+            color: white;
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background: var(--gradient-1);
+            border-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .btn-outline-light {
+            color: white;
+            border: 2px solid white;
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-light:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        /* Progress Bar */
+        .progress {
+            height: 10px;
+            border-radius: 10px;
+            background-color: #e9ecef;
+        }
+        
+        .progress-bar {
+            background: var(--gradient-1);
+            border-radius: 10px;
+        }
+        
+        /* Badge Styles */
+        .badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        
+        /* Table Styles */
+        .table {
+            color: var(--text-dark);
+        }
+        
+        .table thead th {
+            border-bottom: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Alert Styles */
+        .alert {
+            border: none;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-weight: 500;
+        }
+        
+        .alert-warning {
+            background-color: rgba(255, 152, 0, 0.1);
+            color: #ff9800;
+            border-left: 4px solid #ff9800;
+        }
+        
+        .alert-info {
+            background-color: rgba(33, 150, 243, 0.1);
+            color: #2196f3;
+            border-left: 4px solid #2196f3;
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0B132B 0%, #1C2541 100%);
+            color: white;
+            padding: 70px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-text {
+            margin-bottom: 20px;
+            color: #cccccc;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a:hover {
+            background: var(--gradient-1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.4);
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+        
+        .contact-info i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999999;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Loading Spinner */
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            flex-direction: column;
+        }
+        
+        .spinner-border {
+            color: var(--primary-color) !important;
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        .spinner-text {
+            margin-top: 15px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .sidebar {
+                position: fixed;
+                top: 76px;
+                left: -100%;
+                width: 280px;
+                height: calc(100vh - 76px);
+                z-index: 1000;
+                transition: all 0.3s ease;
+            }
+            
+            .sidebar.show {
+                left: 0;
+            }
+            
+            main {
+                margin-left: 0 !important;
+            }
+            
+            .main-content {
+                margin: -30px 15px 50px;
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 80px 0;
+            }
+            
+            .page-title {
+                font-size: 2.2rem;
+            }
+            
+            .stat-value {
+                font-size: 1.5rem;
+            }
+            
+            .main-content {
+                margin: -20px 10px 40px;
+                padding: 20px 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 1.9rem;
+            }
+            
+            .sidebar .card-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> Elite Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessions.html">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i> <span id="nav-username">Account</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                            <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="bookings.html">My Bookings</a></li>
+                            <li><a class="dropdown-item" href="membership.html">My Membership</a></li>
+                            <li><a class="dropdown-item" href="orders.html">Order History</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">My Dashboard</h1>
+            <p>Manage your fitness journey with Elite Gym</p>
+        </div>
+    </div>
+    
+    <!-- Main Content Container -->
+    <div class="container main-content">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse" id="sidebarMenu">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="dashboard.html">
+                                <i class="bi bi-speedometer2 me-2"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">
+                                <i class="bi bi-person me-2"></i>
+                                My Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookings.html">
+                                <i class="bi bi-calendar-check me-2"></i>
+                                My Bookings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">
+                                <i class="bi bi-card-checklist me-2"></i>
+                                My Membership
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="orders.html">
+                                <i class="bi bi-bag me-2"></i>
+                                Order History
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book-classes.html">
+                                <i class="bi bi-calendar-plus me-2"></i>
+                                Book Classes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book-sessions.html">
+                                <i class="bi bi-camera-video me-2"></i>
+                                Book Sessions
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Quick Links</span>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">
+                                <i class="bi bi-list-task me-2"></i>
+                                Browse Classes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sessions.html">
+                                <i class="bi bi-play-circle me-2"></i>
+                                Browse Sessions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">
+                                <i class="bi bi-shop me-2"></i>
+                                Shop Products
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Main Content Area -->
+            <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-primary">Export</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-primary" id="refresh-btn">
+                            <i class="bi bi-arrow-clockwise"></i> Refresh
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Alert Container -->
+                <div id="alert-container"></div>
+                
+                <!-- Dashboard Stats -->
+                <div class="dashboard-stats">
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="stat-card">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="stat-value" id="membership-status">Loading...</div>
+                                        <div class="text-muted">Membership Status</div>
+                                    </div>
+                                    <div class="stat-icon">
+                                        <i class="bi bi-card-checklist"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="stat-card">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="stat-value" id="remaining-hours">Loading...</div>
+                                        <div class="text-muted">Remaining Hours</div>
+                                    </div>
+                                    <div class="stat-icon">
+                                        <i class="bi bi-hourglass-split"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="stat-card">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="stat-value" id="upcoming-bookings">Loading...</div>
+                                        <div class="text-muted">Upcoming Bookings</div>
+                                    </div>
+                                    <div class="stat-icon">
+                                        <i class="bi bi-calendar-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="stat-card">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="stat-value" id="membership-expiry">Loading...</div>
+                                        <div class="text-muted">Membership Expiry</div>
+                                    </div>
+                                    <div class="stat-icon">
+                                        <i class="bi bi-calendar-x"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dashboard Content -->
+                <div class="row">
+                    <!-- Upcoming Bookings -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Upcoming Bookings</h5>
+                                <a href="bookings.html" class="btn btn-sm btn-outline-light">View All</a>
+                            </div>
+                            <div class="card-body">
+                                <div id="upcoming-bookings-list">
+                                    <div class="spinner-container">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <div class="spinner-text">Loading bookings...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Membership Details -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Membership Details</h5>
+                                <a href="membership.html" class="btn btn-sm btn-outline-light">Manage</a>
+                            </div>
+                            <div class="card-body" id="membership-details">
+                                <div class="spinner-container">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div class="spinner-text">Loading membership...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recommended Classes -->
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Recommended Classes For You</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row" id="recommended-classes">
+                                    <div class="col-12 text-center">
+                                        <div class="spinner-container">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                            <div class="spinner-text">Loading recommendations...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Orders -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Recent Orders</h5>
+                                <a href="orders.html" class="btn btn-sm btn-outline-light">View All</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Order ID</th>
+                                                <th>Date</th>
+                                                <th>Items</th>
+                                                <th>Total</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="recent-orders">
+                                            <tr>
+                                                <td colspan="5" class="text-center">
+                                                    <div class="spinner-container" style="height: 100px;">
+                                                        <div class="spinner-border text-primary" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                        </div>
+                                                        <div class="spinner-text">Loading orders...</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Elite Gym</h5>
+                    <p class="footer-text">Empowering women through fitness and wellness.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="sessions.html">Online Sessions</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Membership Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i> 123 Fitness Street, Health City, HC 12345</p>
+                        <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                        <p><i class="bi bi-envelope"></i> info@elitegym.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Elite Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+   <script>
+    document.addEventListener('DOMContentLoaded', async function() {
+        // Check if user is logged in
+        if (!authService.isLoggedIn()) {
+            window.location.href = 'login.html?redirect=dashboard.html';
+            return;
+        }
+        
+        // If user is admin, redirect to admin dashboard
+        if (authService.isAdmin()) {
+            window.location.href = 'admin/dashboard.html';
+            return;
+        }
+        
+        // Get current user
+        const user = authService.getCurrentUser();
+        document.getElementById('nav-username').textContent = user.name;
+        
+        // DOM elements
+        const membershipStatus = document.getElementById('membership-status');
+        const remainingHours = document.getElementById('remaining-hours');
+        const upcomingBookings = document.getElementById('upcoming-bookings');
+        const membershipExpiry = document.getElementById('membership-expiry');
+        const upcomingBookingsList = document.getElementById('upcoming-bookings-list');
+        const membershipDetails = document.getElementById('membership-details');
+        const recommendedClasses = document.getElementById('recommended-classes');
+        const recentOrders = document.getElementById('recent-orders');
+        const refreshBtn = document.getElementById('refresh-btn');
+        const logoutBtn = document.getElementById('logout-btn');
+        
+        // Default membership data for users without membership
+        const getDefaultMembershipData = () => ({
+            status: 'No Membership',
+            remainingHours: 0,
+            totalHours: 0,
+            type: 'No Active Membership',
+            startDate: new Date().toISOString(),
+            endDate: new Date().toISOString()
+        });
+        
+        // Load dashboard data
+        async function loadDashboardData() {
+            try {
+                // Load user profile first
+                const userProfile = await apiService.getUserProfile();
+                
+                // Load membership data with error handling
+                let membership;
+                try {
+                    membership = await apiService.getUserMembership();
+                } catch (error) {
+                    console.warn('No membership found, using default data:', error);
+                    membership = getDefaultMembershipData();
+                }
+                
+                // Update stats
+                membershipStatus.textContent = membership.status || 'No Membership';
+                
+                // Handle remaining hours display
+                if (membership.remainingHours !== undefined) {
+                    remainingHours.textContent = `${membership.remainingHours} hours`;
+                } else {
+                    remainingHours.textContent = '0 hours';
+                }
+                
+                // Format membership expiry
+                if (membership.endDate) {
+                    const expiryDate = new Date(membership.endDate);
+                    const today = new Date();
+                    const diffTime = expiryDate - today;
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                    
+                    if (diffDays < 0) {
+                        membershipExpiry.textContent = 'Expired';
+                        membershipExpiry.parentElement.classList.add('text-danger');
+                    } else if (diffDays < 7) {
+                        membershipExpiry.textContent = `${diffDays} days`;
+                        membershipExpiry.parentElement.classList.add('text-warning');
+                    } else {
+                        membershipExpiry.textContent = `${diffDays} days`;
+                    }
+                } else {
+                    membershipExpiry.textContent = 'N/A';
+                }
+                
+                // Render membership details
+                if (membership.status === 'No Membership' || !membership.totalHours) {
+                    membershipDetails.innerHTML = `
+                        <div class="alert alert-warning">
+                            <h6>No Active Membership</h6>
+                            <p class="mb-2">You don't have an active membership yet.</p>
+                            <a href="pricing.html" class="btn btn-sm btn-primary">Choose a Membership Plan</a>
+                        </div>
+                    `;
+                } else {
+                    membershipDetails.innerHTML = `
+                        <div class="mb-3">
+                            <h6>${membership.type} Membership</h6>
+                            <div class="progress mb-2" style="height: 10px;">
+                                <div class="progress-bar" role="progressbar" 
+                                    style="width: ${((membership.totalHours - membership.remainingHours) / membership.totalHours) * 100}%" 
+                                    aria-valuenow="${membership.totalHours - membership.remainingHours}" 
+                                    aria-valuemin="0" 
+                                    aria-valuemax="${membership.totalHours}">
+                                </div>
+                            </div>
+                            <small class="text-muted">${membership.totalHours - membership.remainingHours} of ${membership.totalHours} hours used</small>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <small class="text-muted d-block">Start Date</small>
+                                <div>${new Date(membership.startDate).toLocaleDateString()}</div>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted d-block">End Date</small>
+                                <div>${new Date(membership.endDate).toLocaleDateString()}</div>
+                            </div>
+                        </div>
+                        ${membership.endDate && (new Date(membership.endDate) - new Date()) / (1000 * 60 * 60 * 24) < 30 ? `
+                        <div class="mt-3">
+                            <a href="membership.html" class="btn btn-sm btn-primary w-100">Renew Membership</a>
+                        </div>
+                        ` : ''}
+                    `;
+                }
+                
+                // Load upcoming bookings
+                let bookings = [];
+                try {
+                    bookings = await apiService.getUserBookings();
+                } catch (error) {
+                    console.warn('Error loading bookings:', error);
+                    // Continue with empty bookings array
+                }
+                
+                // Filter only confirmed bookings that are in future
+                const now = new Date();
+                const confirmedBookings = bookings.filter(booking => 
+                    booking.status === 'Confirmed' && new Date(booking.startTime) > now
+                );
+                
+                // Update upcoming bookings count
+                upcomingBookings.textContent = confirmedBookings.length;
+                
+                // Render upcoming bookings (max 3)
+                if (confirmedBookings.length === 0) {
+                    upcomingBookingsList.innerHTML = `
+                        <div class="alert alert-info">
+                            <i class="bi bi-info-circle me-2"></i>
+                            You have no upcoming bookings. <a href="book-classes.html" class="alert-link">Book a class now!</a>
+                        </div>
+                    `;
+                } else {
+                    upcomingBookingsList.innerHTML = '';
+                    
+                    confirmedBookings.slice(0, 3).forEach(booking => {
+                        const bookingDate = new Date(booking.startTime);
+                        const dateStr = bookingDate.toLocaleDateString();
+                        const timeStr = bookingDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                        
+                        const bookingCard = `
+                            <div class="card mb-2">
+                                <div class="card-body py-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="mb-1">${booking.className}</h6>
+                                            <small class="text-muted">
+                                                <i class="bi bi-calendar3"></i> ${dateStr} at ${timeStr}
+                                            </small>
+                                        </div>
+                                        <div>
+                                            <span class="badge bg-success">${booking.status}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        upcomingBookingsList.innerHTML += bookingCard;
+                    });
+                    
+                    if (confirmedBookings.length > 3) {
+                        upcomingBookingsList.innerHTML += `
+                            <div class="text-center mt-2">
+                                <a href="bookings.html" class="text-decoration-none">View all ${confirmedBookings.length} bookings</a>
+                            </div>
+                        `;
+                    }
+                }
+                
+                // Load recommended classes
+                let allClasses = [];
+                try {
+                    allClasses = await apiService.getClasses();
+                } catch (error) {
+                    console.warn('Error loading classes:', error);
+                    // Continue with empty classes array
+                }
+                
+                recommendedClasses.innerHTML = '';
+                
+                if (allClasses.length === 0) {
+                    recommendedClasses.innerHTML = `
+                        <div class="col-12 text-center">
+                            <div class="alert alert-info">
+                                <i class="bi bi-info-circle me-2"></i>
+                                No classes available at the moment. Please check back later.
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    // Simple recommendation: show random classes
+                    const shuffled = [...allClasses].sort(() => 0.5 - Math.random());
+                    const recommended = shuffled.slice(0, 3);
+                    
+                    recommended.forEach(classItem => {
+                        const classCard = `
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="${classItem.name}">
+                                    <div class="card-body">
+                                        <h6 class="card-title">${classItem.name}</h6>
+                                        <p class="card-text small">${classItem.description ? classItem.description.substring(0, 80) + '...' : 'No description available'}</p>
+                                        <a href="class-details.html?id=${classItem.id}" class="btn btn-sm btn-outline-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        recommendedClasses.innerHTML += classCard;
+                    });
+                }
+                
+                // Load recent orders
+                let orders = [];
+                try {
+                    orders = await apiService.getUserOrders();
+                } catch (error) {
+                    console.warn('Error loading orders:', error);
+                    // Continue with empty orders array
+                }
+                
+                if (orders.length === 0) {
+                    recentOrders.innerHTML = `
+                        <tr>
+                            <td colspan="5" class="text-center py-4">
+                                <i class="bi bi-cart-x display-4 text-muted mb-3"></i>
+                                <p class="text-muted">No orders found</p>
+                                <a href="shop.html" class="btn btn-sm btn-outline-primary">Start Shopping</a>
+                            </td>
+                        </tr>
+                    `;
+                } else {
+                    recentOrders.innerHTML = '';
+                    
+                    orders.slice(0, 5).forEach(order => {
+                        const orderDate = new Date(order.orderDate);
+                        const dateStr = orderDate.toLocaleDateString();
+                        
+                        const row = `
+                            <tr>
+                                <td>#${order.id}</td>
+                                <td>${dateStr}</td>
+                                <td>${order.orderItems ? order.orderItems.length : 0} item${order.orderItems && order.orderItems.length > 1 ? 's' : ''}</td>
+                                <td>${order.totalAmount ? uiHelper.formatCurrency(order.totalAmount) : 'N/A'}</td>
+                                <td><span class="badge bg-${order.status === 'Completed' ? 'success' : order.status === 'Pending' ? 'warning' : 'secondary'}">${order.status || 'Unknown'}</span></td>
+                            </tr>
+                        `;
+                        recentOrders.innerHTML += row;
+                    });
+                }
+                
+                // Show success message if this is the first load
+                if (refreshBtn.disabled === false) {
+                    uiHelper.showAlert('Dashboard loaded successfully!', 'success', 3000);
+                }
+                
+            } catch (error) {
+                console.error('Error loading dashboard data:', error);
+                
+                // More user-friendly error message
+                let errorMessage = 'Error loading dashboard data. ';
+                
+                if (error.message && error.message.includes('network') || !navigator.onLine) {
+                    errorMessage += 'Please check your internet connection and try again.';
+                } else if (error.status === 401) {
+                    errorMessage += 'Your session has expired. Please log in again.';
+                    setTimeout(() => {
+                        authService.logout();
+                    }, 3000);
+                } else {
+                    errorMessage += 'Please try again later.';
+                }
+                
+                uiHelper.showAlert(errorMessage, 'danger');
+                
+                // Show fallback content for critical sections
+                if (membershipDetails.innerHTML.includes('spinner')) {
+                    membershipDetails.innerHTML = `
+                        <div class="alert alert-warning">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            Unable to load membership details. Please try refreshing the page.
+                        </div>
+                    `;
+                }
+            }
+        }
+        
+        // Initial load
+        loadDashboardData();
+        
+        // Refresh button
+        refreshBtn.addEventListener('click', function() {
+            this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Refreshing...';
+            this.disabled = true;
+            
+            loadDashboardData().finally(() => {
+                this.innerHTML = '<i class="bi bi-arrow-clockwise"></i> Refresh';
+                this.disabled = false;
+            });
+        });
+        
+        // Logout button
+        logoutBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            authService.logout();
+        });
+    });
+</script>
+</body>
+</html>

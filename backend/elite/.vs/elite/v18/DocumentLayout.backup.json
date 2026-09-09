@@ -1,0 +1,1621 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Elite\\backend\\elite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\stripemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\stripemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\promotion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\utilities\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\utilities\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\stripepaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\stripepaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\stripedirectpaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\stripedirectpaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\promotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\onlinesessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\onlinesessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\mockpaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\mockpaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\membershiptypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\membershiptypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\membershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\classservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\classservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\stripesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\paymentmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\paymentmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\onlinesessionschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\onlinesessionschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\onlinesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\onlinesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\classschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\classschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\mockgateways\\tamaramockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\tamaramockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\mockgateways\\tabbymockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\tabbymockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\mockgateways\\mockpaymentgatewaywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\mockpaymentgatewaywrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\mockgateways\\mockgatewayfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\mockgatewayfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\mockgateways\\mockgatewaybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\mockgatewaybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\mockgateways\\imockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\imockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\mockgateways\\creditcardmockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\mockgateways\\creditcardmockgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\middleware\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\middleware\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\middleware\\performancemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\middleware\\performancemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\middleware\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\middleware\\correlationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\middleware\\correlationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\ipromotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\ipromotionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\ipaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\ipaymentgateway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\ionlinesessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\ionlinesessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\imembershiptypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\imembershiptypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\imembershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\imembershipservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\iclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iclassservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\trainerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\trainerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\trainerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\trainerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\promotiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\promotiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\onlinesessiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\onlinesessiondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\membershiptypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\membershiptypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\membershipdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\membershipdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\classdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\classdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\bookingdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\bookingdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\dtos\\admindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\dtos\\admindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\data\\gymdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\data\\gymdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\data\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\data\\gymdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\trainerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\trainerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\stripewebhookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\stripewebhookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\stripepaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\stripepaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\promotionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\promotionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\onlinesessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\onlinesessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\mockpaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\mockpaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\mockgatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\mockgatewaycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\membershiptypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\membershiptypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\membershipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\membershipscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\configurations\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\configurations\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\migrations\\20260429091116_addstripepaymentintegration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\migrations\\20260429091116_addstripepaymentintegration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\migrations\\20251129080613_addpaymentsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\migrations\\20251129080613_addpaymentsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\elite.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\elite.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|d:\\projects\\elite\\backend\\elite\\elite\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DD57B4F-60CA-4C14-BE75-5F01D542318E}|elite\\elite.csproj|solutionrelative:elite\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 352,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\appsettings.json",
+              "RelativeDocumentMoniker": "elite\\appsettings.json",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\appsettings.json",
+              "RelativeToolTip": "elite\\appsettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-08T08:30:59.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\OrderDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\OrderDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\OrderDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\OrderDtos.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\PaymentService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\PaymentService.cs",
+              "RelativeToolTip": "elite\\Services\\PaymentService.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAAAmwCIBAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\OrderService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\OrderService.cs",
+              "RelativeToolTip": "elite\\Services\\OrderService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Promotion.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Promotion.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Promotion.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Promotion.cs",
+              "RelativeToolTip": "elite\\Models\\Promotion.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwB4AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Utilities\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "elite\\Utilities\\PasswordHasher.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Utilities\\PasswordHasher.cs",
+              "RelativeToolTip": "elite\\Utilities\\PasswordHasher.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAywBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StripeModels.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\StripeModels.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\StripeModels.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\StripeModels.cs",
+              "RelativeToolTip": "elite\\Models\\StripeModels.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Program.cs",
+              "RelativeDocumentMoniker": "elite\\Program.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Program.cs",
+              "RelativeToolTip": "elite\\Program.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAowNAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TrainerService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\TrainerService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\TrainerService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\TrainerService.cs",
+              "RelativeToolTip": "elite\\Services\\TrainerService.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAmwMoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Utilities\\JwtService.cs",
+              "RelativeDocumentMoniker": "elite\\Utilities\\JwtService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Utilities\\JwtService.cs",
+              "RelativeToolTip": "elite\\Utilities\\JwtService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAqwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StripePaymentGateway.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\StripePaymentGateway.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\StripePaymentGateway.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\StripePaymentGateway.cs",
+              "RelativeToolTip": "elite\\Services\\StripePaymentGateway.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAAAiwFEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StripeDirectPaymentService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\StripeDirectPaymentService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\StripeDirectPaymentService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\StripeDirectPaymentService.cs",
+              "RelativeToolTip": "elite\\Services\\StripeDirectPaymentService.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAmwLQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PromotionService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\PromotionService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\PromotionService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\PromotionService.cs",
+              "RelativeToolTip": "elite\\Services\\PromotionService.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAmwOwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\ProductService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\ProductService.cs",
+              "RelativeToolTip": "elite\\Services\\ProductService.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAiwLEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OnlineSessionService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\OnlineSessionService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\OnlineSessionService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\OnlineSessionService.cs",
+              "RelativeToolTip": "elite\\Services\\OnlineSessionService.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAmwNsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:30:59.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MockPaymentGateway.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\MockPaymentGateway.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\MockPaymentGateway.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\MockPaymentGateway.cs",
+              "RelativeToolTip": "elite\\Services\\MockPaymentGateway.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAmwKUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MembershipTypeService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\MembershipTypeService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\MembershipTypeService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\MembershipTypeService.cs",
+              "RelativeToolTip": "elite\\Services\\MembershipTypeService.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwJAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MembershipService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\MembershipService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\MembershipService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\MembershipService.cs",
+              "RelativeToolTip": "elite\\Services\\MembershipService.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAqwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\ImageService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\ImageService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\ImageService.cs",
+              "RelativeToolTip": "elite\\Services\\ImageService.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAmwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ClassService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\ClassService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\ClassService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\ClassService.cs",
+              "RelativeToolTip": "elite\\Services\\ClassService.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAmwOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\BookingService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\BookingService.cs",
+              "RelativeToolTip": "elite\\Services\\BookingService.cs",
+              "ViewState": "AgIAAKMBAAAAAAAAAAAqwLwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\AuthService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\AuthService.cs",
+              "RelativeToolTip": "elite\\Services\\AuthService.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAmwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "elite\\Services\\AdminService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Services\\AdminService.cs",
+              "RelativeToolTip": "elite\\Services\\AdminService.cs",
+              "ViewState": "AgIAAEcBAAAAAAAAAAAqwGABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\User.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\User.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\User.cs",
+              "RelativeToolTip": "elite\\Models\\User.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA9wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Trainer.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Trainer.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Trainer.cs",
+              "RelativeToolTip": "elite\\Models\\Trainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StripeSettings.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\StripeSettings.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\StripeSettings.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\StripeSettings.cs",
+              "RelativeToolTip": "elite\\Models\\StripeSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Product.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Product.cs",
+              "RelativeToolTip": "elite\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PaymentModels.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\PaymentModels.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\PaymentModels.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\PaymentModels.cs",
+              "RelativeToolTip": "elite\\Models\\PaymentModels.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\OrderItem.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\OrderItem.cs",
+              "RelativeToolTip": "elite\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Order.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Order.cs",
+              "RelativeToolTip": "elite\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OnlineSessionSchedule.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\OnlineSessionSchedule.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\OnlineSessionSchedule.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\OnlineSessionSchedule.cs",
+              "RelativeToolTip": "elite\\Models\\OnlineSessionSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OnlineSession.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\OnlineSession.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\OnlineSession.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\OnlineSession.cs",
+              "RelativeToolTip": "elite\\Models\\OnlineSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MembershipType.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\MembershipType.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\MembershipType.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\MembershipType.cs",
+              "RelativeToolTip": "elite\\Models\\MembershipType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Membership.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Membership.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Membership.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Membership.cs",
+              "RelativeToolTip": "elite\\Models\\Membership.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ClassSchedule.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\ClassSchedule.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\ClassSchedule.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\ClassSchedule.cs",
+              "RelativeToolTip": "elite\\Models\\ClassSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Class.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Class.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Class.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Class.cs",
+              "RelativeToolTip": "elite\\Models\\Class.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Booking.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Booking.cs",
+              "RelativeToolTip": "elite\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "elite\\Models\\Admin.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Models\\Admin.cs",
+              "RelativeToolTip": "elite\\Models\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TamaraMockGateway.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\TamaraMockGateway.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\TamaraMockGateway.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\TamaraMockGateway.cs",
+              "RelativeToolTip": "elite\\MockGateways\\TamaraMockGateway.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA2wBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TabbyMockGateway.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\TabbyMockGateway.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\TabbyMockGateway.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\TabbyMockGateway.cs",
+              "RelativeToolTip": "elite\\MockGateways\\TabbyMockGateway.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "MockPaymentGatewayWrapper.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\MockPaymentGatewayWrapper.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\MockPaymentGatewayWrapper.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\MockPaymentGatewayWrapper.cs",
+              "RelativeToolTip": "elite\\MockGateways\\MockPaymentGatewayWrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MockGatewayFactory.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\MockGatewayFactory.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\MockGatewayFactory.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\MockGatewayFactory.cs",
+              "RelativeToolTip": "elite\\MockGateways\\MockGatewayFactory.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MockGatewayBase.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\MockGatewayBase.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\MockGatewayBase.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\MockGatewayBase.cs",
+              "RelativeToolTip": "elite\\MockGateways\\MockGatewayBase.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAmwIAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IMockGateway.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\IMockGateway.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\IMockGateway.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\IMockGateway.cs",
+              "RelativeToolTip": "elite\\MockGateways\\IMockGateway.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAgwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CreditCardMockGateway.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\CreditCardMockGateway.cs",
+              "RelativeDocumentMoniker": "elite\\MockGateways\\CreditCardMockGateway.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\MockGateways\\CreditCardMockGateway.cs",
+              "RelativeToolTip": "elite\\MockGateways\\CreditCardMockGateway.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwDIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "RequestLoggingMiddleware.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Middleware\\RequestLoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "elite\\Middleware\\RequestLoggingMiddleware.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Middleware\\RequestLoggingMiddleware.cs",
+              "RelativeToolTip": "elite\\Middleware\\RequestLoggingMiddleware.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "PerformanceMiddleware.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Middleware\\PerformanceMiddleware.cs",
+              "RelativeDocumentMoniker": "elite\\Middleware\\PerformanceMiddleware.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Middleware\\PerformanceMiddleware.cs",
+              "RelativeToolTip": "elite\\Middleware\\PerformanceMiddleware.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "elite\\Middleware\\ExceptionMiddleware.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Middleware\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "elite\\Middleware\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CorrelationMiddleware.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Middleware\\CorrelationMiddleware.cs",
+              "RelativeDocumentMoniker": "elite\\Middleware\\CorrelationMiddleware.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Middleware\\CorrelationMiddleware.cs",
+              "RelativeToolTip": "elite\\Middleware\\CorrelationMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ITrainerService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\ITrainerService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\ITrainerService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\ITrainerService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\ITrainerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IPromotionService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IPromotionService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IPromotionService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IPromotionService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IPromotionService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IProductService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IPaymentGateway.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IPaymentGateway.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IPaymentGateway.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IPaymentGateway.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IPaymentGateway.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IOrderService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IOnlineSessionService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IOnlineSessionService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IOnlineSessionService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IOnlineSessionService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IOnlineSessionService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IMembershipTypeService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IMembershipTypeService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IMembershipTypeService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IMembershipTypeService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IMembershipTypeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IMembershipService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IMembershipService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IMembershipService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IMembershipService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IMembershipService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "IImageService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IImageService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IImageService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IImageService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IImageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IClassService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IClassService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IClassService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IClassService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IClassService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IBookingService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IBookingService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IBookingService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IBookingService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.153Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IAdminService.cs",
+              "RelativeDocumentMoniker": "elite\\Interfaces\\IAdminService.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Interfaces\\IAdminService.cs",
+              "RelativeToolTip": "elite\\Interfaces\\IAdminService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\UserDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\UserDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\UserDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\UserDtos.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAADwvzkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "TrainerUpdateDto.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\TrainerUpdateDto.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\TrainerUpdateDto.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\TrainerUpdateDto.cs",
+              "RelativeToolTip": "elite\\DTOs\\TrainerUpdateDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "TrainerDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\TrainerDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\TrainerDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\TrainerDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\TrainerDtos.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PromotionDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\PromotionDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\PromotionDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\PromotionDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\PromotionDtos.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAywDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ProductUpdateDto.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\ProductUpdateDto.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\ProductUpdateDto.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\ProductUpdateDto.cs",
+              "RelativeToolTip": "elite\\DTOs\\ProductUpdateDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ProductDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\ProductDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\ProductDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\ProductDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\ProductDtos.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA/wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "OnlineSessionDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\OnlineSessionDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\OnlineSessionDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\OnlineSessionDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\OnlineSessionDtos.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "MembershipTypeDto.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\MembershipTypeDto.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\MembershipTypeDto.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\MembershipTypeDto.cs",
+              "RelativeToolTip": "elite\\DTOs\\MembershipTypeDto.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvyIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "MembershipDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\MembershipDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\MembershipDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\MembershipDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\MembershipDtos.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "ClassDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\ClassDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\ClassDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\ClassDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\ClassDtos.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "BookingDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\BookingDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\BookingDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\BookingDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\BookingDtos.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "AuthDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\AuthDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\AuthDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\AuthDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\AuthDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "AdminDtos.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\AdminDtos.cs",
+              "RelativeDocumentMoniker": "elite\\DTOs\\AdminDtos.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\DTOs\\AdminDtos.cs",
+              "RelativeToolTip": "elite\\DTOs\\AdminDtos.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA5wBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "GymDbContextFactory.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Data\\GymDbContextFactory.cs",
+              "RelativeDocumentMoniker": "elite\\Data\\GymDbContextFactory.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Data\\GymDbContextFactory.cs",
+              "RelativeToolTip": "elite\\Data\\GymDbContextFactory.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "GymDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Data\\GymDbContext.cs",
+              "RelativeDocumentMoniker": "elite\\Data\\GymDbContext.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Data\\GymDbContext.cs",
+              "RelativeToolTip": "elite\\Data\\GymDbContext.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAqwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "elite\\Data\\DataSeeder.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "elite\\Data\\DataSeeder.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAqwJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "TrainersController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\TrainersController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\TrainersController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\TrainersController.cs",
+              "RelativeToolTip": "elite\\Controllers\\TrainersController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAmwJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\TestController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\TestController.cs",
+              "RelativeToolTip": "elite\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "StripeWebhookController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\StripeWebhookController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\StripeWebhookController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\StripeWebhookController.cs",
+              "RelativeToolTip": "elite\\Controllers\\StripeWebhookController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAiwH4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "StripePaymentController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\StripePaymentController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\StripePaymentController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\StripePaymentController.cs",
+              "RelativeToolTip": "elite\\Controllers\\StripePaymentController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAmwJQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "PromotionsController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\PromotionsController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\PromotionsController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\PromotionsController.cs",
+              "RelativeToolTip": "elite\\Controllers\\PromotionsController.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAmwLsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "elite\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAmwJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\PaymentController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "elite\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAmwLEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "elite\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAA8wNIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "OnlineSessionsController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\OnlineSessionsController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\OnlineSessionsController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\OnlineSessionsController.cs",
+              "RelativeToolTip": "elite\\Controllers\\OnlineSessionsController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAmwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "MockPaymentController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\MockPaymentController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\MockPaymentController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\MockPaymentController.cs",
+              "RelativeToolTip": "elite\\Controllers\\MockPaymentController.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAqwMMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "MockGatewayController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\MockGatewayController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\MockGatewayController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\MockGatewayController.cs",
+              "RelativeToolTip": "elite\\Controllers\\MockGatewayController.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAAAqwC0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "MembershipTypesController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\MembershipTypesController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\MembershipTypesController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\MembershipTypesController.cs",
+              "RelativeToolTip": "elite\\Controllers\\MembershipTypesController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAmwIQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "MembershipsController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\MembershipsController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\MembershipsController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\MembershipsController.cs",
+              "RelativeToolTip": "elite\\Controllers\\MembershipsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAcwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "ClassesController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\ClassesController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\ClassesController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\ClassesController.cs",
+              "RelativeToolTip": "elite\\Controllers\\ClassesController.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAmwKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\BookingController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "elite\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAA8wHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "elite\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAmwIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "elite\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "elite\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAmwIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Configurations\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "elite\\Configurations\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Configurations\\AutoMapperProfile.cs",
+              "RelativeToolTip": "elite\\Configurations\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "20260429091116_AddStripePaymentIntegration.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Migrations\\20260429091116_AddStripePaymentIntegration.cs",
+              "RelativeDocumentMoniker": "elite\\Migrations\\20260429091116_AddStripePaymentIntegration.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Migrations\\20260429091116_AddStripePaymentIntegration.cs",
+              "RelativeToolTip": "elite\\Migrations\\20260429091116_AddStripePaymentIntegration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "20251129080613_AddPaymentSystem.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\Migrations\\20251129080613_AddPaymentSystem.cs",
+              "RelativeDocumentMoniker": "elite\\Migrations\\20251129080613_AddPaymentSystem.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\Migrations\\20251129080613_AddPaymentSystem.cs",
+              "RelativeToolTip": "elite\\Migrations\\20251129080613_AddPaymentSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "elite.csproj",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\elite.csproj",
+              "RelativeDocumentMoniker": "elite\\elite.csproj",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\elite.csproj",
+              "RelativeToolTip": "elite\\elite.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-08T08:31:00.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Projects\\Elite\\backend\\elite\\elite\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "elite\\WeatherForecast.cs",
+              "ToolTip": "D:\\Projects\\Elite\\backend\\elite\\elite\\WeatherForecast.cs",
+              "RelativeToolTip": "elite\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:31:00.62Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

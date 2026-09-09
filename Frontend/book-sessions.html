@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Online Sessions - Elite Gym</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #5E60CE;      /* Modern Indigo */
+            --secondary-color: #5390D9;    /* Lighter Blue */
+            --accent-color: #48BFE3;       /* Teal Accent */
+            --dark-color: #0B132B;         /* Deep Dark Blue */
+            --light-color: #F8F9FA;
+            --text-dark: #0B132B;
+            --text-light: #5E6472;
+            --card-bg: #ffffff;
+            --section-bg: #F8F9FA;
+            --gradient-1: linear-gradient(135deg, #5E60CE 0%, #5390D9 100%);
+            --gradient-2: linear-gradient(135deg, #48BFE3 0%, #5E60CE 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--section-bg);
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 15px 0;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary-color) !important;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-nav .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-nav .nav-link:hover:after, .navbar-nav .nav-link.active:after {
+            width: 70%;
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: var(--gradient-1);
+            background-image: url("images/cta-bg.jpg");
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.2;
+            z-index: 0;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        
+        /* Main Content Container */
+        .main-content {
+            background-color: #fff;
+            border-radius: 20px;
+            margin: -50px auto 80px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: var(--light-color) !important;
+            min-height: calc(100vh - 76px);
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+            border-radius: 0 20px 20px 0;
+            margin-right: 20px;
+            position: relative;
+        }
+        
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--gradient-1);
+            border-radius: 0 20px 20px 0;
+        }
+        
+        .sidebar .nav-link {
+            color: var(--text-dark) !important;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .sidebar .nav-link:hover {
+            background-color: var(--accent-color);
+            color: white !important;
+            transform: translateX(5px);
+        }
+        
+        .sidebar .nav-link.active {
+            background: var(--gradient-1);
+            color: #fff !important;
+            box-shadow: 0 4px 10px rgba(94, 96, 206, 0.3);
+        }
+        
+        .sidebar-heading {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: var(--text-light);
+            padding: 10px 15px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        
+        /* Card Styles */
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: none;
+            transition: all 0.4s ease;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(72, 191, 227, 0.15);
+        }
+        
+        .card-header {
+            background: var(--gradient-1);
+            border-bottom: none;
+            font-weight: 600;
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 15px 20px;
+        }
+        
+        /* Button Styles */
+        .btn-primary {
+            background: var(--gradient-2);
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(72, 191, 227, 0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(72, 191, 227, 0.3);
+            color: white;
+        }
+        
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-primary:hover {
+            background: var(--gradient-1);
+            border-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .btn-outline-secondary {
+            border-radius: 30px;
+            padding: 8px 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-secondary:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* Form Styles */
+        .form-control, .form-select {
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+            padding: 12px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(94, 96, 206, 0.25);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        
+        /* Table Styles */
+        .table {
+            color: var(--text-dark);
+        }
+        
+        .table thead th {
+            border-bottom: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .table-hover tbody tr:hover {
+            background-color: rgba(72, 191, 227, 0.1);
+        }
+        
+        .badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        
+        /* Progress Bar Styles */
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        
+        .progress-bar {
+            background-color: var(--primary-color);
+            border-radius: 5px;
+        }
+        
+        /* Alert Styles */
+        .alert {
+            border: none;
+            border-radius: 10px;
+            padding: 15px 20px;
+            font-weight: 500;
+        }
+        
+        .alert-warning {
+            background-color: rgba(255, 152, 0, 0.1);
+            color: #ff9800;
+            border-left: 4px solid #ff9800;
+        }
+        
+        .alert-danger {
+            background-color: rgba(220, 53, 69, 0.1);
+            color: #dc3545;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .alert-info {
+            background-color: rgba(33, 150, 243, 0.1);
+            color: #2196f3;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .alert-success {
+            background-color: rgba(25, 135, 84, 0.1);
+            color: #198754;
+            border-left: 4px solid #198754;
+        }
+        
+        /* Modal Styles */
+        .modal-content {
+            border-radius: 15px;
+            border: none;
+        }
+        
+        .modal-header {
+            background: var(--gradient-1);
+            border-bottom: none;
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+        }
+        
+        .modal-header .btn-close {
+            filter: invert(1);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #0B132B 0%, #1C2541 100%);
+            color: white;
+            padding: 70px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .footer-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-text {
+            margin-bottom: 20px;
+            color: #cccccc;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons a:hover {
+            background: var(--gradient-1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(94, 96, 206, 0.4);
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #cccccc;
+        }
+        
+        .contact-info i {
+            color: var(--accent-color);
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999999;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Loading Spinner */
+        .spinner-border {
+            color: var(--primary-color) !important;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .sidebar {
+                position: fixed;
+                top: 76px;
+                left: -100%;
+                width: 280px;
+                height: calc(100vh - 76px);
+                z-index: 1000;
+                transition: all 0.3s ease;
+            }
+            
+            .sidebar.show {
+                left: 0;
+            }
+            
+            main {
+                margin-left: 0 !important;
+            }
+            
+            .main-content {
+                margin: -30px 15px 50px;
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 80px 0;
+            }
+            
+            .page-title {
+                font-size: 2.2rem;
+            }
+            
+            .main-content {
+                margin: -20px 10px 40px;
+                padding: 20px 15px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-title {
+                font-size: 1.9rem;
+            }
+            
+            .sidebar .card-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> Elite Gym
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sessions.html">Online Sessions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Membership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i> <span id="nav-username">Account</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="dashboard.html">My Dashboard</a></li>
+                            <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                            <li><a class="dropdown-item" href="bookings.html">My Bookings</a></li>
+                            <li><a class="dropdown-item" href="membership.html">My Membership</a></li>
+                            <li><a class="dropdown-item" href="orders.html">Order History</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logout-btn">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">Book Online Sessions</h1>
+            <p>Join our virtual fitness classes from anywhere</p>
+        </div>
+    </div>
+    
+    <!-- Main Content Container -->
+    <div class="container main-content">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse" id="sidebarMenu">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">
+                                <i class="bi bi-speedometer2 me-2"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">
+                                <i class="bi bi-person me-2"></i>
+                                My Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookings.html">
+                                <i class="bi bi-calendar-check me-2"></i>
+                                My Bookings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membership.html">
+                                <i class="bi bi-card-checklist me-2"></i>
+                                My Membership
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="orders.html">
+                                <i class="bi bi-bag me-2"></i>
+                                Order History
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="book-classes.html">
+                                <i class="bi bi-calendar-plus me-2"></i>
+                                Book Classes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="book-sessions.html">
+                                <i class="bi bi-camera-video me-2"></i>
+                                Book Sessions
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Quick Links</span>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="classes.html">
+                                <i class="bi bi-list-task me-2"></i>
+                                Browse Classes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sessions.html">
+                                <i class="bi bi-play-circle me-2"></i>
+                                Browse Sessions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">
+                                <i class="bi bi-shop me-2"></i>
+                                Shop Products
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Main Content Area -->
+            <main class="col-md-9 ms-sm-auto col-lg-9 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Book Online Sessions</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Calendar View</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-primary" id="refresh-btn">
+                            <i class="bi bi-arrow-clockwise"></i> Refresh
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Alert Container -->
+                <div id="alert-container"></div>
+                
+                <!-- Membership Status -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Your Membership</h5>
+                        <div id="membership-status">
+                            <div class="spinner-border spinner-border-sm text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Session Filters -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form id="filter-form" class="row g-3">
+                            <div class="col-md-3">
+                                <label for="trainer-filter" class="form-label">Trainer</label>
+                                <select class="form-select" id="trainer-filter">
+                                    <option value="">All Trainers</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="day-filter" class="form-label">Day of Week</label>
+                                <select class="form-select" id="day-filter">
+                                    <option value="">Any Day</option>
+                                    <option value="1">Monday</option>
+                                    <option value="2">Tuesday</option>
+                                    <option value="3">Wednesday</option>
+                                    <option value="4">Thursday</option>
+                                    <option value="5">Friday</option>
+                                    <option value="6">Saturday</option>
+                                    <option value="0">Sunday</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="time-filter" class="form-label">Time of Day</label>
+                                <select class="form-select" id="time-filter">
+                                    <option value="">Any Time</option>
+                                    <option value="morning">Morning (6am-12pm)</option>
+                                    <option value="afternoon">Afternoon (12pm-5pm)</option>
+                                    <option value="evening">Evening (5pm-10pm)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-end">
+                                <button type="button" class="btn btn-outline-secondary w-100" id="reset-filters">Reset Filters</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Sessions with Schedules -->
+                <div class="card">
+                    <div class="card-body">
+                        <div id="sessions-with-schedules">
+                            <div class="text-center">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <!-- Booking Confirmation Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Confirm Booking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="booking-details">
+                        <!-- Booking details will be loaded here -->
+                    </div>
+                    <div class="alert alert-warning mt-3">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                        This booking will use <span id="hours-consumed">0</span> hours from your membership.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="confirm-booking-btn">Confirm Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="footer-title">Elite Gym</h5>
+                    <p class="footer-text">Empowering women through fitness and wellness.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="sessions.html">Online Sessions</a></li>
+                        <li><a href="trainers.html">Trainers</a></li>
+                        <li><a href="pricing.html">Membership Plans</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <div class="contact-info">
+                        <p><i class="bi bi-geo-alt"></i> 123 Fitness Street, Health City, HC 12345</p>
+                        <p><i class="bi bi-telephone"></i> (123) 456-7890</p>
+                        <p><i class="bi bi-envelope"></i> info@elitegym.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Elite Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Check if user is logged in
+            if (!authService.isLoggedIn()) {
+                window.location.href = 'login.html?redirect=book-sessions.html';
+                return;
+            }
+            
+            // Get current user
+            const user = authService.getCurrentUser();
+            document.getElementById('nav-username').textContent = user.name;
+            
+            // DOM elements
+            const membershipStatus = document.getElementById('membership-status');
+            const sessionsWithSchedules = document.getElementById('sessions-with-schedules');
+            const trainerFilter = document.getElementById('trainer-filter');
+            const dayFilter = document.getElementById('day-filter');
+            const timeFilter = document.getElementById('time-filter');
+            const resetFiltersBtn = document.getElementById('reset-filters');
+            const refreshBtn = document.getElementById('refresh-btn');
+            const bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+            const bookingDetails = document.getElementById('booking-details');
+            const hoursConsumed = document.getElementById('hours-consumed');
+            const confirmBookingBtn = document.getElementById('confirm-booking-btn');
+            const logoutBtn = document.getElementById('logout-btn');
+            
+            // Global variables
+            let allSessions = [];
+            let filteredSessions = [];
+            let currentSession = null;
+            let currentSchedule = null;
+            
+            // Load membership status
+            async function loadMembershipStatus() {
+                try {
+                    const membership = await apiService.getUserMembership();
+                    
+                    membershipStatus.innerHTML = `
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>${membership.type} Membership</h6>
+                                <div class="progress mb-2" style="height: 10px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" 
+                                        style="width: ${((membership.totalHours - membership.remainingHours) / membership.totalHours) * 100}%" 
+                                        aria-valuenow="${membership.totalHours - membership.remainingHours}" 
+                                        aria-valuemin="0" 
+                                        aria-valuemax="${membership.totalHours}">
+                                    </div>
+                                </div>
+                                <small class="text-muted">${membership.totalHours - membership.remainingHours} of ${membership.totalHours} hours used</small>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Remaining Hours</h6>
+                                <h3 class="text-primary">${membership.remainingHours} hours</h3>
+                                <small class="text-muted">Expires: ${new Date(membership.endDate).toLocaleDateString()}</small>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Check if membership is expired or has low hours
+                    const expiryDate = new Date(membership.endDate);
+                    const today = new Date();
+                    const diffTime = expiryDate - today;
+                    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                    
+                    if (diffDays < 0) {
+                        membershipStatus.innerHTML += `
+                            <div class="alert alert-danger mt-3">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                Your membership has expired. Please renew to book sessions.
+                                <a href="membership.html" class="btn btn-sm btn-primary ms-2">Renew Now</a>
+                            </div>
+                        `;
+                    } else if (membership.remainingHours === 0) {
+                        membershipStatus.innerHTML += `
+                            <div class="alert alert-warning mt-3">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                You have no remaining hours. Please consider upgrading your membership.
+                                <a href="membership.html" class="btn btn-sm btn-primary ms-2">Upgrade Now</a>
+                            </div>
+                        `;
+                    }
+                    
+                } catch (error) {
+                    console.error('Error loading membership status:', error);
+                    membershipStatus.innerHTML = `
+                        <div class="alert alert-danger">
+                            Error loading membership information. Please try again later.
+                        </div>
+                    `;
+                }
+            }
+            
+            // Load sessions with schedules
+            async function loadSessionsWithSchedules() {
+                try {
+                    uiHelper.showLoading(sessionsWithSchedules);
+                    
+                    allSessions = await apiService.getSessions();
+                    filteredSessions = [...allSessions];
+                    
+                    // Get schedules for each session
+                    const sessionsWithSchedulesData = await Promise.all(
+                        allSessions.map(async session => {
+                            const schedules = await apiService.getSessionSchedules(session.id);
+                            return {
+                                ...session,
+                                schedules
+                            };
+                        })
+                    );
+                    
+                    // Filter sessions that have schedules
+                    const sessionsWithAvailableSchedules = sessionsWithSchedulesData.filter(
+                        session => session.schedules && session.schedules.length > 0
+                    );
+                    
+                    // Populate trainer filter
+                    const trainers = [...new Set(sessionsWithAvailableSchedules.map(s => s.trainerName))];
+                    trainerFilter.innerHTML = '<option value="">All Trainers</option>';
+                    trainers.forEach(trainer => {
+                        trainerFilter.innerHTML += `<option value="${trainer}">${trainer}</option>`;
+                    });
+                    
+                    renderSessionsWithSchedules(sessionsWithAvailableSchedules);
+                } catch (error) {
+                    console.error('Error loading sessions with schedules:', error);
+                    sessionsWithSchedules.innerHTML = `
+                        <div class="alert alert-warning">
+                            Unable to load sessions at this time. Please try again later.
+                        </div>
+                    `;
+                } finally {
+                    uiHelper.hideLoading(sessionsWithSchedules.querySelector('.spinner-border'));
+                }
+            }
+            
+            // Filter sessions
+            function filterSessions() {
+                const trainerValue = trainerFilter.value;
+                const dayValue = dayFilter.value;
+                const timeValue = timeFilter.value;
+                
+                filteredSessions = allSessions.filter(session => {
+                    // Trainer filter
+                    if (trainerValue && session.trainerName !== trainerValue) {
+                        return false;
+                    }
+                    
+                    // Day filter
+                    if (dayValue && session.schedules) {
+                        const hasDay = session.schedules.some(schedule => {
+                            const scheduleDay = new Date(schedule.startTime).getDay();
+                            return scheduleDay.toString() === dayValue;
+                        });
+                        
+                        if (!hasDay) return false;
+                    }
+                    
+                    // Time filter
+                    if (timeValue && session.schedules) {
+                        const hasTime = session.schedules.some(schedule => {
+                            const scheduleHour = new Date(schedule.startTime).getHours();
+                            
+                            switch (timeValue) {
+                                case 'morning':
+                                    return scheduleHour >= 6 && scheduleHour < 12;
+                                case 'afternoon':
+                                    return scheduleHour >= 12 && scheduleHour < 17;
+                                case 'evening':
+                                    return scheduleHour >= 17 && scheduleHour < 22;
+                                default:
+                                    return true;
+                            }
+                        });
+                        
+                        if (!hasTime) return false;
+                    }
+                    
+                    return true;
+                });
+                
+                renderSessionsWithSchedules(filteredSessions);
+            }
+            
+            // Render sessions with schedules
+            function renderSessionsWithSchedules(sessions) {
+                sessionsWithSchedules.innerHTML = '';
+                
+                if (sessions.length === 0) {
+                    sessionsWithSchedules.innerHTML = `
+                        <div class="alert alert-info">
+                            No sessions match your selected filters.
+                        </div>
+                    `;
+                    return;
+                }
+                
+                sessions.forEach(session => {
+                    const sessionCard = `
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">${session.name}</h5>
+                                <span class="badge bg-primary">${session.trainerName}</span>
+                            </div>
+                            <div class="card-body">
+                                <p>${session.description}</p>
+                                
+                                <h6 class="mt-3">Available Schedules</h6>
+                                ${session.schedules && session.schedules.length > 0 ? `
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Available Slots</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                ${session.schedules.map(schedule => {
+                                                    const scheduleDate = new Date(schedule.startTime);
+                                                    const dateStr = scheduleDate.toLocaleDateString();
+                                                    const timeStr = scheduleDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                                                    
+                                                    return `
+                                                        <tr>
+                                                            <td>${dateStr}</td>
+                                                            <td>${timeStr}</td>
+                                                            <td>${schedule.availableSlots} / 20 (${Math.round((schedule.availableSlots / 20) * 100)}%)</td>
+                                                            <td>
+                                                                <button class="btn btn-sm btn-primary book-session-btn" 
+                                                                    data-session='${JSON.stringify(session)}' 
+                                                                    data-schedule='${JSON.stringify(schedule)}'
+                                                                    ${schedule.availableSlots === 0 ? 'disabled' : ''}>
+                                                                    ${schedule.availableSlots === 0 ? 'Full' : 'Book'}
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    `;
+                                                }).join('')}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                ` : '<p class="text-muted">No available schedules</p>'}
+                            </div>
+                        </div>
+                    `;
+                    
+                    sessionsWithSchedules.innerHTML += sessionCard;
+                });
+                
+                // Add event listeners to book buttons
+                document.querySelectorAll('.book-session-btn').forEach(btn => {
+                    if (!btn.disabled) {
+                        btn.addEventListener('click', function() {
+                            const session = JSON.parse(this.getAttribute('data-session'));
+                            const schedule = JSON.parse(this.getAttribute('data-schedule'));
+                            showBookingConfirmation(session, schedule);
+                        });
+                    }
+                });
+            }
+            
+            // Show booking confirmation
+            function showBookingConfirmation(session, schedule) {
+                currentSession = session;
+                currentSchedule = schedule;
+                
+                const scheduleDate = new Date(schedule.startTime);
+                const dateStr = scheduleDate.toLocaleDateString();
+                const timeStr = scheduleDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                
+                bookingDetails.innerHTML = `
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>${session.name}</h6>
+                            <p class="mb-1"><strong>Trainer:</strong> ${session.trainerName}</p>
+                            <p class="mb-1"><strong>Date & Time:</strong> ${dateStr} at ${timeStr}</p>
+                            <p class="mb-0"><strong>Duration:</strong> ${session.duration} hours</p>
+                        </div>
+                    </div>
+                `;
+                
+                hoursConsumed.textContent = session.duration;
+                
+                bookingModal.show();
+            }
+            
+            // Confirm booking
+            confirmBookingBtn.addEventListener('click', async function() {
+                if (!currentSession || !currentSchedule) return;
+                
+                this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Booking...';
+                this.disabled = true;
+                
+                try {
+                    // Create booking
+                    await apiService.createBooking({
+                        type: 'OnlineSession',
+                        scheduleId: currentSchedule.id
+                    });
+                    
+                    // Show success message
+                    uiHelper.showToast('Session booked successfully!', 'success');
+                    
+                    // Hide modal
+                    bookingModal.hide();
+                    
+                    // Reload sessions and membership status
+                    await Promise.all([
+                        loadSessionsWithSchedules(),
+                        loadMembershipStatus()
+                    ]);
+                    
+                } catch (error) {
+                    console.error('Error booking session:', error);
+                    uiHelper.showAlert(error.message || 'Failed to book session. Please try again.', 'danger');
+                    
+                    // Reset button
+                    this.innerHTML = 'Confirm Booking';
+                    this.disabled = false;
+                }
+            });
+            
+            // Add event listeners
+            trainerFilter.addEventListener('change', filterSessions);
+            dayFilter.addEventListener('change', filterSessions);
+            timeFilter.addEventListener('change', filterSessions);
+            resetFiltersBtn.addEventListener('click', function() {
+                trainerFilter.value = '';
+                dayFilter.value = '';
+                timeFilter.value = '';
+                filterSessions();
+            });
+            refreshBtn.addEventListener('click', function() {
+                this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Refreshing...';
+                this.disabled = true;
+                
+                Promise.all([
+                    loadSessionsWithSchedules(),
+                    loadMembershipStatus()
+                ]).finally(() => {
+                    this.innerHTML = '<i class="bi bi-arrow-clockwise"></i> Refresh';
+                    this.disabled = false;
+                });
+            });
+            logoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                authService.logout();
+            });
+            
+            // Initial load
+            Promise.all([
+                loadSessionsWithSchedules(),
+                loadMembershipStatus()
+            ]);
+        });
+    </script>
+</body>
+</html>

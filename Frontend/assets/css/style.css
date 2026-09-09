@@ -1,0 +1,374 @@
+/* Global Styles */
+:root {
+    --primary-color: #e91e63;
+    --secondary-color: #f06292;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --success-color: #4caf50;
+    --info-color: #2196f3;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    min-height: 70vh;
+    padding-top: 2rem;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 8rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Class & Session Cards */
+.class-card, .session-card {
+    position: relative;
+}
+
+.class-card .card-img-overlay, .session-card .card-img-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    top: auto;
+    bottom: 0;
+    height: 40%;
+}
+
+.class-card .card-title, .session-card .card-title {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+/* Trainer Cards */
+.trainer-card .card-img-top {
+    height: 250px;
+}
+
+.trainer-card .card-body {
+    padding: 1.25rem;
+}
+
+.trainer-card .trainer-specialty {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Membership Plans */
+.pricing-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.pricing-card .card-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.pricing-card ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-card ul li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card ul li i {
+    color: var(--success-color);
+    margin-right: 0.5rem;
+}
+
+/* Product Cards */
+.product-card .card-img-top {
+    height: 200px;
+}
+
+.product-card .product-category {
+    color: var(--info-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-card .product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Dashboard Styles */
+.dashboard-card {
+    border-left: 4px solid var(--primary-color);
+}
+
+.dashboard-stats .stat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-stats .stat-card .stat-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.dashboard-stats .stat-card .stat-value {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* Booking Styles */
+.booking-card {
+    margin-bottom: 1rem;
+}
+
+.booking-card .booking-date {
+    color: var(--info-color);
+    font-size: 0.9rem;
+}
+
+.booking-card .booking-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.booking-card .status-confirmed {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--success-color);
+}
+
+.booking-card .status-cancelled {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--danger-color);
+}
+
+.booking-card .status-completed {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: var(--info-color);
+}
+
+/* Admin Dashboard Styles */
+.admin-sidebar {
+    background-color: var(--dark-color);
+    color: white;
+    min-height: 100vh;
+    padding-top: 1rem;
+}
+
+.admin-sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.admin-sidebar .nav-link:hover, .admin-sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.admin-sidebar .nav-link i {
+    margin-right: 0.5rem;
+}
+
+.admin-content {
+    padding: 2rem;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(233, 30, 99, 0.25);
+}
+
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(233, 30, 99, 0.25);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Table Styles */
+.table thead th {
+    background-color: var(--dark-color);
+    color: white;
+    border: none;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(233, 30, 99, 0.05);
+}
+
+/* Utility Classes */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.section-subtitle {
+    color: #6c757d;
+    margin-bottom: 3rem;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .admin-sidebar {
+        min-height: auto;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Loading Spinner */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/* Alert Styles */
+.alert {
+    border: none;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--success-color);
+}
+
+.alert-danger {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--danger-color);
+}
+
+.alert-info {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: var(--info-color);
+}
+
+.alert-warning {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: var(--warning-color);
+}
